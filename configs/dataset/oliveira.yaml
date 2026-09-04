@@ -1,0 +1,20 @@
+# File on disk is Oliveria.csv (original spelling).
+name: oliveira
+kind: csv
+path: datasets/datasets/Oliveria.csv
+text_column: api
+label_column: class
+label_order:
+  - Trojan
+  - Adware
+  - Downloader
+  - Ransomware
+  - Agent
+  - Riskware
+  - Backdoor
+  - Dropper
+  - Virus
+test_size: 0.2
+val_size: 0.2
+random_state: 75
+split_strategy: random

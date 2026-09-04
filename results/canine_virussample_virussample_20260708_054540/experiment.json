@@ -1,0 +1,95 @@
+{
+  "run_id": "canine_virussample_virussample_20260708_054540",
+  "run_dir": "/home/wind/phongtt/malware-detection/results/canine_virussample_virussample_20260708_054540",
+  "created_at": "2026-07-08T05:45:40.617667+00:00",
+  "labels": {
+    "model": "canine",
+    "dataset": "virussample",
+    "train": "virussample",
+    "seed": 42,
+    "split_seed": 42
+  },
+  "config_files": {
+    "dataset": "configs/dataset/virussample.yaml",
+    "model": "configs/model/canine.yaml",
+    "train": "configs/train/virussample.yaml"
+  },
+  "dataset": {
+    "name": "virussample",
+    "kind": "csv",
+    "path": "datasets/datasets/VirusSample.csv",
+    "text_column": "api",
+    "label_column": "class",
+    "label_order": [
+      "Trojan",
+      "Virus",
+      "Backdoor",
+      "Worms",
+      "Adware",
+      "Agent"
+    ],
+    "test_size": 0.2,
+    "val_size": 0.2,
+    "random_state": 42,
+    "split_strategy": "random",
+    "preprocess": null
+  },
+  "model": {
+    "name": "canine",
+    "pretrained_name": "google/canine-c",
+    "max_length": 512,
+    "n_estimators": 5,
+    "embed_dim": 16,
+    "hidden_dim": 100,
+    "max_words": 800,
+    "lstm_max_len": 500,
+    "dropout": 0.2,
+    "chunk_size": 128,
+    "max_chunks": 64,
+    "num_phases": 4,
+    "recency_bias_init": 1.0,
+    "transformer_layers": 4,
+    "transformer_heads": null,
+    "gnn_layers": 2,
+    "truncation_side": "right"
+  },
+  "train": {
+    "output_dir": "/home/wind/phongtt/malware-detection/results/canine_virussample_virussample_20260708_054540",
+    "epochs": 10,
+    "batch_size": 16,
+    "learning_rate": 5e-05,
+    "weight_decay": 0.01,
+    "warmup_steps": 500,
+    "lr_scheduler_type": "cosine",
+    "seed": 42,
+    "use_class_weights": true,
+    "fp16": true,
+    "dataloader_num_workers": 6,
+    "gradient_accumulation_steps": 1,
+    "metric_for_best_model": "eval_auc",
+    "save_total_limit": 2,
+    "use_afc_loss": false,
+    "afc_alpha": 0.1,
+    "afc_tau_base": 0.07,
+    "afc_adaptive": true,
+    "afc_warmup_epochs": 0,
+    "collect_training_history": true,
+    "collect_per_class": true,
+    "benchmark_inference": true,
+    "inference_warmup_batches": 1,
+    "logging_steps": 100
+  },
+  "splits": {
+    "train": 6228,
+    "val": 1557,
+    "test": 1947
+  },
+  "num_classes": 6,
+  "finished_at": "2026-07-08T05:55:41.073487+00:00",
+  "total_wall_s": 600.6883,
+  "test_headline": {
+    "auc": 0.980456513479201,
+    "f1": 0.8013716453504433,
+    "mcc": 0.8765003174750724
+  }
+}

@@ -1,0 +1,100 @@
+21:50:53 | INFO    | malware_clf.utils.experiment | Experiment config saved to results_v1/epaht_virussample_virussample_epaht_virussample_afc_v4_20260629_145053/experiment.yaml
+21:50:53 | INFO    | malware_clf.utils.experiment | Starting experiment:
+Run ID:     epaht_virussample_virussample_epaht_virussample_afc_v4_20260629_145053
+Output dir: results_v1/epaht_virussample_virussample_epaht_virussample_afc_v4_20260629_145053
+Model:      epaht_virussample (epaht)
+Dataset:    virussample (virussample)
+Train cfg:  epaht_virussample_afc_v4
+Training:   epochs=60 batch=64 lr=0.0005 fp16=False
+Splits:     train=6228 val=1557 test=1947 classes=6
+21:50:53 | INFO    | malware_clf.models.epaht | EPAHT: building vocabulary from 6228 training samples.
+21:50:53 | INFO    | malware_clf.models.epaht | EPAHT: lazy chunk encoding (chunk_size=16, max_chunks=4).
+21:50:53 | INFO    | malware_clf.models.epaht | EPAHT: AFC-Loss enabled (alpha=0.050, tau_base=0.070).
+21:50:54 | INFO    | malware_clf.models.epaht | EPAHT epoch 1/60 train_loss=1.1520 val_mcc=0.7506
+21:50:55 | INFO    | malware_clf.models.epaht | EPAHT epoch 2/60 train_loss=0.4958 val_mcc=0.8273
+21:50:56 | INFO    | malware_clf.models.epaht | EPAHT epoch 3/60 train_loss=0.3394 val_mcc=0.8329
+21:50:57 | INFO    | malware_clf.models.epaht | EPAHT epoch 4/60 train_loss=0.2843 val_mcc=0.8376
+21:50:58 | INFO    | malware_clf.models.epaht | EPAHT epoch 5/60 train_loss=0.2619 val_mcc=0.8454
+21:50:59 | INFO    | malware_clf.models.epaht | EPAHT epoch 6/60 train_loss=0.4719 val_mcc=0.8665
+21:51:00 | INFO    | malware_clf.models.epaht | EPAHT epoch 7/60 train_loss=0.4331 val_mcc=0.8569
+21:51:01 | INFO    | malware_clf.models.epaht | EPAHT epoch 8/60 train_loss=0.4117 val_mcc=0.8510
+21:51:02 | INFO    | malware_clf.models.epaht | EPAHT epoch 9/60 train_loss=0.3937 val_mcc=0.8536
+21:51:03 | INFO    | malware_clf.models.epaht | EPAHT epoch 10/60 train_loss=0.3841 val_mcc=0.8569
+21:51:04 | INFO    | malware_clf.models.epaht | EPAHT epoch 11/60 train_loss=0.3726 val_mcc=0.8547
+21:51:05 | INFO    | malware_clf.models.epaht | EPAHT epoch 12/60 train_loss=0.3674 val_mcc=0.8795
+21:51:06 | INFO    | malware_clf.models.epaht | EPAHT epoch 13/60 train_loss=0.3630 val_mcc=0.8683
+21:51:07 | INFO    | malware_clf.models.epaht | EPAHT epoch 14/60 train_loss=0.3568 val_mcc=0.8795
+21:51:08 | INFO    | malware_clf.models.epaht | EPAHT epoch 15/60 train_loss=0.3500 val_mcc=0.8533
+21:51:09 | INFO    | malware_clf.models.epaht | EPAHT epoch 16/60 train_loss=0.3477 val_mcc=0.8830
+21:51:10 | INFO    | malware_clf.models.epaht | EPAHT epoch 17/60 train_loss=0.3488 val_mcc=0.8616
+21:51:11 | INFO    | malware_clf.models.epaht | EPAHT epoch 18/60 train_loss=0.3448 val_mcc=0.8628
+21:51:12 | INFO    | malware_clf.models.epaht | EPAHT epoch 19/60 train_loss=0.3438 val_mcc=0.8256
+21:51:13 | INFO    | malware_clf.models.epaht | EPAHT epoch 20/60 train_loss=0.3457 val_mcc=0.8671
+21:51:14 | INFO    | malware_clf.models.epaht | EPAHT epoch 21/60 train_loss=0.3371 val_mcc=0.8660
+21:51:15 | INFO    | malware_clf.models.epaht | EPAHT epoch 22/60 train_loss=0.3380 val_mcc=0.8637
+21:51:16 | INFO    | malware_clf.models.epaht | EPAHT epoch 23/60 train_loss=0.3311 val_mcc=0.8672
+21:51:17 | INFO    | malware_clf.models.epaht | EPAHT epoch 24/60 train_loss=0.3344 val_mcc=0.8619
+21:51:18 | INFO    | malware_clf.models.epaht | EPAHT epoch 25/60 train_loss=0.3319 val_mcc=0.8632
+21:51:19 | INFO    | malware_clf.models.epaht | EPAHT epoch 26/60 train_loss=0.3366 val_mcc=0.8627
+21:51:20 | INFO    | malware_clf.models.epaht | EPAHT epoch 27/60 train_loss=0.3289 val_mcc=0.8620
+21:51:21 | INFO    | malware_clf.models.epaht | EPAHT epoch 28/60 train_loss=0.3280 val_mcc=0.8672
+21:51:22 | INFO    | malware_clf.models.epaht | EPAHT epoch 29/60 train_loss=0.3258 val_mcc=0.8615
+21:51:23 | INFO    | malware_clf.models.epaht | EPAHT epoch 30/60 train_loss=0.3255 val_mcc=0.8638
+21:51:24 | INFO    | malware_clf.models.epaht | EPAHT epoch 31/60 train_loss=0.3281 val_mcc=0.8631
+21:51:25 | INFO    | malware_clf.models.epaht | EPAHT epoch 32/60 train_loss=0.3257 val_mcc=0.8658
+21:51:26 | INFO    | malware_clf.models.epaht | EPAHT epoch 33/60 train_loss=0.3258 val_mcc=0.8866
+21:51:27 | INFO    | malware_clf.models.epaht | EPAHT epoch 34/60 train_loss=0.3193 val_mcc=0.8630
+21:51:28 | INFO    | malware_clf.models.epaht | EPAHT epoch 35/60 train_loss=0.3219 val_mcc=0.8617
+21:51:29 | INFO    | malware_clf.models.epaht | EPAHT epoch 36/60 train_loss=0.3229 val_mcc=0.8867
+21:51:30 | INFO    | malware_clf.models.epaht | EPAHT epoch 37/60 train_loss=0.3175 val_mcc=0.8633
+21:51:32 | INFO    | malware_clf.models.epaht | EPAHT epoch 38/60 train_loss=0.3202 val_mcc=0.8642
+21:51:33 | INFO    | malware_clf.models.epaht | EPAHT epoch 39/60 train_loss=0.3171 val_mcc=0.8856
+21:51:34 | INFO    | malware_clf.models.epaht | EPAHT epoch 40/60 train_loss=0.3158 val_mcc=0.8672
+21:51:35 | INFO    | malware_clf.models.epaht | EPAHT epoch 41/60 train_loss=0.3174 val_mcc=0.8651
+21:51:36 | INFO    | malware_clf.models.epaht | EPAHT epoch 42/60 train_loss=0.3154 val_mcc=0.8663
+21:51:37 | INFO    | malware_clf.models.epaht | EPAHT epoch 43/60 train_loss=0.3151 val_mcc=0.8670
+21:51:38 | INFO    | malware_clf.models.epaht | EPAHT epoch 44/60 train_loss=0.3163 val_mcc=0.8648
+21:51:39 | INFO    | malware_clf.models.epaht | EPAHT epoch 45/60 train_loss=0.3139 val_mcc=0.8662
+21:51:40 | INFO    | malware_clf.models.epaht | EPAHT epoch 46/60 train_loss=0.3141 val_mcc=0.8670
+21:51:41 | INFO    | malware_clf.models.epaht | EPAHT epoch 47/60 train_loss=0.3123 val_mcc=0.8650
+21:51:42 | INFO    | malware_clf.models.epaht | EPAHT epoch 48/60 train_loss=0.3154 val_mcc=0.8682
+21:51:43 | INFO    | malware_clf.models.epaht | EPAHT epoch 49/60 train_loss=0.3131 val_mcc=0.8671
+21:51:44 | INFO    | malware_clf.models.epaht | EPAHT epoch 50/60 train_loss=0.3092 val_mcc=0.8671
+21:51:45 | INFO    | malware_clf.models.epaht | EPAHT epoch 51/60 train_loss=0.3124 val_mcc=0.8671
+21:51:46 | INFO    | malware_clf.models.epaht | EPAHT epoch 52/60 train_loss=0.3101 val_mcc=0.8682
+21:51:47 | INFO    | malware_clf.models.epaht | EPAHT epoch 53/60 train_loss=0.3130 val_mcc=0.8681
+21:51:48 | INFO    | malware_clf.models.epaht | EPAHT epoch 54/60 train_loss=0.3116 val_mcc=0.8681
+21:51:49 | INFO    | malware_clf.models.epaht | EPAHT epoch 55/60 train_loss=0.3110 val_mcc=0.8670
+21:51:50 | INFO    | malware_clf.models.epaht | EPAHT epoch 56/60 train_loss=0.3117 val_mcc=0.8670
+21:51:51 | INFO    | malware_clf.models.epaht | EPAHT epoch 57/60 train_loss=0.3120 val_mcc=0.8670
+21:51:52 | INFO    | malware_clf.models.epaht | EPAHT epoch 58/60 train_loss=0.3107 val_mcc=0.8670
+21:51:53 | INFO    | malware_clf.models.epaht | EPAHT epoch 59/60 train_loss=0.3127 val_mcc=0.8670
+21:51:54 | INFO    | malware_clf.models.epaht | EPAHT epoch 60/60 train_loss=0.3108 val_mcc=0.8670
+21:51:54 | INFO    | malware_clf.runner | EPAHT checkpoint saved to results_v1/epaht_virussample_virussample_epaht_virussample_afc_v4_20260629_145053/epaht.pt
+21:51:54 | INFO    | malware_clf.utils.experiment | Metrics saved to results_v1/epaht_virussample_virussample_epaht_virussample_afc_v4_20260629_145053/metrics.json
+Run ID:     epaht_virussample_virussample_epaht_virussample_afc_v4_20260629_145053
+Output dir: results_v1/epaht_virussample_virussample_epaht_virussample_afc_v4_20260629_145053
+Model:      epaht_virussample (epaht)
+Dataset:    virussample (virussample)
+Train cfg:  epaht_virussample_afc_v4
+Training:   epochs=60 batch=64 lr=0.0005 fp16=False
+Splits:     train=6228 val=1557 test=1947 classes=6
+{
+  "run_dir": "results_v1/epaht_virussample_virussample_epaht_virussample_afc_v4_20260629_145053",
+  "val": {
+    "precision": 0.9239505880617528,
+    "recall": 0.7264119407533095,
+    "acc": 0.9402697495183044,
+    "mcc": 0.8866609762650334,
+    "f1": 0.7657288731186623,
+    "auc": 0.9694316198166321
+  },
+  "test": {
+    "precision": 0.9179118614764218,
+    "recall": 0.7479838920902582,
+    "acc": 0.9460708782742681,
+    "mcc": 0.8979105595913109,
+    "f1": 0.786801955862463,
+    "auc": 0.9723291979692481
+  }
+}

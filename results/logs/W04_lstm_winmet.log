@@ -1,0 +1,57 @@
+19:33:02 | INFO    | malware_clf.utils.experiment | Experiment config saved to results/lstm_winmet_lstm_20260627_123302/experiment.yaml
+19:33:02 | INFO    | malware_clf.utils.experiment | Starting experiment:
+Run ID:     lstm_winmet_lstm_20260627_123302
+Output dir: results/lstm_winmet_lstm_20260627_123302
+Model:      lstm (lstm)
+Dataset:    winmet (winmet)
+Train cfg:  lstm
+Training:   epochs=20 batch=128 lr=0.001 fp16=False
+Splits:     train=1833 val=459 test=573 classes=10
+19:33:06 | INFO    | malware_clf.models.lstm | LSTM epoch 1/20 loss=27.0549
+19:33:06 | INFO    | malware_clf.models.lstm | LSTM epoch 2/20 loss=17.0893
+19:33:07 | INFO    | malware_clf.models.lstm | LSTM epoch 3/20 loss=12.5294
+19:33:07 | INFO    | malware_clf.models.lstm | LSTM epoch 4/20 loss=9.9403
+19:33:07 | INFO    | malware_clf.models.lstm | LSTM epoch 5/20 loss=8.2206
+19:33:08 | INFO    | malware_clf.models.lstm | LSTM epoch 6/20 loss=6.9470
+19:33:08 | INFO    | malware_clf.models.lstm | LSTM epoch 7/20 loss=5.6867
+19:33:08 | INFO    | malware_clf.models.lstm | LSTM epoch 8/20 loss=4.6489
+19:33:09 | INFO    | malware_clf.models.lstm | LSTM epoch 9/20 loss=4.3232
+19:33:09 | INFO    | malware_clf.models.lstm | LSTM epoch 10/20 loss=3.7007
+19:33:10 | INFO    | malware_clf.models.lstm | LSTM epoch 11/20 loss=3.0886
+19:33:10 | INFO    | malware_clf.models.lstm | LSTM epoch 12/20 loss=2.5503
+19:33:10 | INFO    | malware_clf.models.lstm | LSTM epoch 13/20 loss=2.5029
+19:33:11 | INFO    | malware_clf.models.lstm | LSTM epoch 14/20 loss=2.7224
+19:33:11 | INFO    | malware_clf.models.lstm | LSTM epoch 15/20 loss=2.2446
+19:33:11 | INFO    | malware_clf.models.lstm | LSTM epoch 16/20 loss=1.8967
+19:33:12 | INFO    | malware_clf.models.lstm | LSTM epoch 17/20 loss=1.9227
+19:33:12 | INFO    | malware_clf.models.lstm | LSTM epoch 18/20 loss=1.9080
+19:33:12 | INFO    | malware_clf.models.lstm | LSTM epoch 19/20 loss=1.6596
+19:33:13 | INFO    | malware_clf.models.lstm | LSTM epoch 20/20 loss=1.4815
+19:33:14 | INFO    | malware_clf.runner | LSTM checkpoint saved to results/lstm_winmet_lstm_20260627_123302/lstm.pt
+19:33:14 | INFO    | malware_clf.utils.experiment | Metrics saved to results/lstm_winmet_lstm_20260627_123302/metrics.json
+Run ID:     lstm_winmet_lstm_20260627_123302
+Output dir: results/lstm_winmet_lstm_20260627_123302
+Model:      lstm (lstm)
+Dataset:    winmet (winmet)
+Train cfg:  lstm
+Training:   epochs=20 batch=128 lr=0.001 fp16=False
+Splits:     train=1833 val=459 test=573 classes=10
+{
+  "run_dir": "results/lstm_winmet_lstm_20260627_123302",
+  "val": {
+    "precision": 0.6924638873328903,
+    "recall": 0.6714017275123888,
+    "acc": 0.6840958605664488,
+    "mcc": 0.6381365823320159,
+    "f1": 0.6808027515521632,
+    "auc": 0.936028320138543
+  },
+  "test": {
+    "precision": 0.6632616763509696,
+    "recall": 0.6511874794042859,
+    "acc": 0.6561954624781849,
+    "mcc": 0.6072121091926832,
+    "f1": 0.6551190154354574,
+    "auc": 0.938357896667233
+  }
+}

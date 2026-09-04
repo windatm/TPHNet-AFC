@@ -1,0 +1,7 @@
+# LSTM, max length 2000 (AVAST context check).
+name: lstm
+embed_dim: 16
+hidden_dim: 100
+max_words: 800
+lstm_max_len: 2000
+dropout: 0.2

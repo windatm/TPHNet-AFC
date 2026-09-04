@@ -1,0 +1,386 @@
+{
+  "run_id": "canine_oliveira_oliveira_20260702_054711",
+  "run_dir": "/home/wind/phongtt/malware-detection/results/canine_oliveira_oliveira_20260702_054711",
+  "labels": {
+    "model": "canine",
+    "dataset": "oliveira",
+    "train": "oliveira",
+    "seed": 75,
+    "split_seed": 75
+  },
+  "dataset": "oliveira",
+  "model": "canine",
+  "train": "oliveira",
+  "test_headline": {
+    "precision": 0.42938967653277477,
+    "recall": 0.4098624467639824,
+    "acc": 0.8300468326349519,
+    "mcc": 0.5494316322263469,
+    "f1": 0.41115810958372934,
+    "auc": 0.7929595797414972
+  },
+  "per_class": {
+    "val": {
+      "per_class": {
+        "Trojan": {
+          "precision": 0.9289319604280234,
+          "recall": 0.8991596638655462,
+          "f1": 0.913803376365442,
+          "support": 5117
+        },
+        "Adware": {
+          "precision": 0.4816556914393227,
+          "recall": 0.5878300803673938,
+          "f1": 0.5294725956566702,
+          "support": 871
+        },
+        "Downloader": {
+          "precision": 0.575,
+          "recall": 0.7371794871794872,
+          "f1": 0.6460674157303371,
+          "support": 312
+        },
+        "Ransomware": {
+          "precision": 0.9821428571428571,
+          "recall": 0.8461538461538461,
+          "f1": 0.9090909090909091,
+          "support": 65
+        },
+        "Agent": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 35
+        },
+        "Riskware": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 35
+        },
+        "Backdoor": {
+          "precision": 0.375,
+          "recall": 0.2857142857142857,
+          "f1": 0.32432432432432434,
+          "support": 21
+        },
+        "Dropper": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 19
+        },
+        "Virus": {
+          "precision": 0.3333333333333333,
+          "recall": 0.0625,
+          "f1": 0.10526315789473684,
+          "support": 16
+        }
+      },
+      "macro_avg": {
+        "precision": 0.40845153803817075,
+        "recall": 0.379837484808951,
+        "f1": 0.3808913087847133
+      },
+      "weighted_avg": {
+        "precision": 0.836437308242407,
+        "recall": 0.8326914188876906,
+        "f1": 0.8328857605630607
+      },
+      "balanced_accuracy": 0.379837484808951,
+      "confusion_matrix": [
+        [
+          4601,
+          442,
+          66,
+          1,
+          0,
+          0,
+          5,
+          0,
+          2
+        ],
+        [
+          264,
+          512,
+          94,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          23,
+          59,
+          230,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          7,
+          1,
+          0,
+          55,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          21,
+          12,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          12,
+          21,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          10,
+          4,
+          1,
+          0,
+          0,
+          0,
+          6,
+          0,
+          0
+        ],
+        [
+          7,
+          7,
+          3,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          8,
+          5,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "class_names": [
+        "Trojan",
+        "Adware",
+        "Downloader",
+        "Ransomware",
+        "Agent",
+        "Riskware",
+        "Backdoor",
+        "Dropper",
+        "Virus"
+      ]
+    },
+    "test": {
+      "per_class": {
+        "Trojan": {
+          "precision": 0.9276678559844308,
+          "recall": 0.8943089430894309,
+          "f1": 0.9106830122591943,
+          "support": 6396
+        },
+        "Adware": {
+          "precision": 0.4656934306569343,
+          "recall": 0.5858585858585859,
+          "f1": 0.5189101260675071,
+          "support": 1089
+        },
+        "Downloader": {
+          "precision": 0.6252676659528907,
+          "recall": 0.7487179487179487,
+          "f1": 0.6814469078179697,
+          "support": 390
+        },
+        "Ransomware": {
+          "precision": 1.0,
+          "recall": 0.8765432098765432,
+          "f1": 0.9342105263157895,
+          "support": 81
+        },
+        "Agent": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 44
+        },
+        "Riskware": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 43
+        },
+        "Backdoor": {
+          "precision": 0.2903225806451613,
+          "recall": 0.3333333333333333,
+          "f1": 0.3103448275862069,
+          "support": 27
+        },
+        "Dropper": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 24
+        },
+        "Virus": {
+          "precision": 0.5555555555555556,
+          "recall": 0.25,
+          "f1": 0.3448275862068966,
+          "support": 20
+        }
+      },
+      "macro_avg": {
+        "precision": 0.42938967653277477,
+        "recall": 0.4098624467639824,
+        "f1": 0.41115810958372934
+      },
+      "weighted_avg": {
+        "precision": 0.8361237322371184,
+        "recall": 0.8300468326349519,
+        "f1": 0.831468188618052
+      },
+      "balanced_accuracy": 0.4098624467639824,
+      "confusion_matrix": [
+        [
+          5720,
+          610,
+          57,
+          0,
+          0,
+          0,
+          5,
+          0,
+          4
+        ],
+        [
+          344,
+          638,
+          103,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0
+        ],
+        [
+          20,
+          74,
+          292,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0
+        ],
+        [
+          7,
+          1,
+          0,
+          71,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          30,
+          9,
+          5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          16,
+          20,
+          5,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          16,
+          2,
+          0,
+          0,
+          0,
+          0,
+          9,
+          0,
+          0
+        ],
+        [
+          7,
+          11,
+          3,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0
+        ],
+        [
+          6,
+          5,
+          2,
+          0,
+          0,
+          0,
+          2,
+          0,
+          5
+        ]
+      ],
+      "class_names": [
+        "Trojan",
+        "Adware",
+        "Downloader",
+        "Ransomware",
+        "Agent",
+        "Riskware",
+        "Backdoor",
+        "Dropper",
+        "Virus"
+      ]
+    }
+  }
+}

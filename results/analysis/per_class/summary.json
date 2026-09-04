@@ -1,0 +1,955 @@
+{
+  "results_root": "/home/wind/phongtt/malware-detection/results",
+  "num_exported": 222,
+  "num_skipped_no_per_class": 0,
+  "exported_run_ids": [
+    "ablations_epaht_chunk_256_avast_epaht_avast_20260724_183845",
+    "ablations_epaht_chunk_64_avast_epaht_avast_20260724_171248",
+    "ablations_epaht_no_recency_avast_epaht_avast_20260724_115326",
+    "ablations_epaht_phases_1_avast_epaht_avast_20260724_143316",
+    "ablations_epaht_phases_8_avast_epaht_avast_20260724_155308",
+    "ablations_epaht_strong_recency_avast_epaht_avast_20260724_131319",
+    "bert_avast_avast_bert_20260702_095608",
+    "bert_avast_avast_bert_20260720_085035",
+    "bert_avast_avast_bert_20260720_113106",
+    "bert_avast_avast_bert_20260720_141146",
+    "bert_avast_avast_bert_20260720_165237",
+    "bert_avast_avast_bert_afc_20260707_063637",
+    "bert_avast_avast_bert_afc_20260723_060827",
+    "bert_avast_avast_bert_afc_20260723_085204",
+    "bert_avast_avast_bert_afc_20260723_113601",
+    "bert_avast_avast_bert_afc_20260723_141943",
+    "bert_catak_catak_20260702_083814",
+    "bert_catak_catak_20260710_075338",
+    "bert_catak_catak_20260710_080711",
+    "bert_catak_catak_20260710_082042",
+    "bert_catak_catak_20260710_083413",
+    "bert_catak_catak_afc_20260707_051730",
+    "bert_catak_catak_afc_20260723_005110",
+    "bert_catak_catak_afc_20260723_010510",
+    "bert_catak_catak_afc_20260723_011911",
+    "bert_catak_catak_afc_20260723_013312",
+    "bert_oliveira_oliveira_20260702_085144",
+    "bert_oliveira_oliveira_20260710_084742",
+    "bert_oliveira_oliveira_20260710_095142",
+    "bert_oliveira_oliveira_20260710_105544",
+    "bert_oliveira_oliveira_20260710_115949",
+    "bert_oliveira_oliveira_afc_20260707_053124",
+    "bert_oliveira_oliveira_afc_20260723_014709",
+    "bert_oliveira_oliveira_afc_20260723_025225",
+    "bert_oliveira_oliveira_afc_20260723_035743",
+    "bert_oliveira_oliveira_afc_20260723_050300",
+    "bert_tail_avast_avast_bert_20260725_153959",
+    "bert_virussample_virussample_20260702_075859",
+    "bert_virussample_virussample_20260710_051628",
+    "bert_virussample_virussample_20260710_053211",
+    "bert_virussample_virussample_20260710_054753",
+    "bert_virussample_virussample_20260710_060336",
+    "bert_virussample_virussample_afc_20260707_043730",
+    "bert_virussample_virussample_afc_20260722_221042",
+    "bert_virussample_virussample_afc_20260722_222644",
+    "bert_virussample_virussample_afc_20260722_224244",
+    "bert_virussample_virussample_afc_20260722_225846",
+    "bert_virusshare_virusshare_20260702_081440",
+    "bert_virusshare_virusshare_20260710_061921",
+    "bert_virusshare_virusshare_20260710_064254",
+    "bert_virusshare_virusshare_20260710_070628",
+    "bert_virusshare_virusshare_20260710_073002",
+    "bert_virusshare_virusshare_afc_20260707_045326",
+    "bert_virusshare_virusshare_afc_20260722_231446",
+    "bert_virusshare_virusshare_afc_20260722_233852",
+    "bert_virusshare_virusshare_afc_20260723_000258",
+    "bert_virusshare_virusshare_afc_20260723_002702",
+    "bert_winmet_winmet_bert_20260702_123749",
+    "bert_winmet_winmet_bert_20260720_193306",
+    "bert_winmet_winmet_bert_20260720_193926",
+    "bert_winmet_winmet_bert_20260720_194546",
+    "bert_winmet_winmet_bert_20260720_195207",
+    "bert_winmet_winmet_bert_afc_20260707_092130",
+    "bert_winmet_winmet_bert_afc_20260723_170307",
+    "bert_winmet_winmet_bert_afc_20260723_170935",
+    "bert_winmet_winmet_bert_afc_20260723_171605",
+    "bert_winmet_winmet_bert_afc_20260723_172234",
+    "canine_avast_avast_20260702_062833",
+    "canine_avast_avast_20260709_130647",
+    "canine_avast_avast_20260710_003854",
+    "canine_avast_avast_20260710_020254",
+    "canine_avast_avast_20260710_032639",
+    "canine_catak_catak_20260702_053636",
+    "canine_catak_catak_20260708_073005",
+    "canine_catak_catak_20260708_074042",
+    "canine_catak_catak_20260708_075116",
+    "canine_catak_catak_20260708_080151",
+    "canine_oliveira_oliveira_20260702_054711",
+    "canine_oliveira_oliveira_20260709_102200",
+    "canine_oliveira_oliveira_20260709_110307",
+    "canine_oliveira_oliveira_20260709_114419",
+    "canine_oliveira_oliveira_20260709_122530",
+    "canine_virussample_virussample_20260702_051030",
+    "canine_virussample_virussample_20260708_054540",
+    "canine_virussample_virussample_20260708_055546",
+    "canine_virussample_virussample_20260708_060552",
+    "canine_virussample_virussample_20260708_061558",
+    "canine_virusshare_virusshare_20260702_052035",
+    "canine_virusshare_virusshare_20260708_062603",
+    "canine_virusshare_virusshare_20260708_064204",
+    "canine_virusshare_virusshare_20260708_065803",
+    "canine_virusshare_virusshare_20260708_071402",
+    "canine_winmet_winmet_20260702_075229",
+    "canine_winmet_winmet_20260710_045033",
+    "canine_winmet_winmet_20260710_045659",
+    "canine_winmet_winmet_20260710_050327",
+    "canine_winmet_winmet_20260710_050959",
+    "epaht_avast_epaht_avast_20260707_031413",
+    "epaht_avast_epaht_avast_20260722_163604",
+    "epaht_avast_epaht_avast_20260722_175545",
+    "epaht_avast_epaht_avast_20260722_191536",
+    "epaht_avast_epaht_avast_20260722_203528",
+    "epaht_avast_epaht_avast_afc_a005_20260724_195504",
+    "epaht_avast_epaht_avast_afc_a020_20260724_235023",
+    "epaht_avast_epaht_avast_afc_a030_20260725_034531",
+    "epaht_avast_epaht_avast_afc_t005_20260725_074055",
+    "epaht_avast_epaht_avast_afc_t010_20260725_113633",
+    "epaht_avast_epaht_avast_afc_v4_20260707_095812",
+    "epaht_avast_epaht_avast_afc_v4_20260723_193021",
+    "epaht_avast_epaht_avast_afc_v4_20260723_232433",
+    "epaht_avast_epaht_avast_afc_v4_20260724_031918",
+    "epaht_avast_epaht_avast_afc_v4_20260724_071432",
+    "epaht_catak_catak_epaht_catak_20260707_030652",
+    "epaht_catak_catak_epaht_catak_20260722_160633",
+    "epaht_catak_catak_epaht_catak_20260722_161156",
+    "epaht_catak_catak_epaht_catak_20260722_161722",
+    "epaht_catak_catak_epaht_catak_20260722_162241",
+    "epaht_catak_catak_epaht_catak_afc_v4_20260707_093416",
+    "epaht_catak_catak_epaht_catak_afc_v4_20260723_175423",
+    "epaht_catak_catak_epaht_catak_afc_v4_20260723_181047",
+    "epaht_catak_catak_epaht_catak_afc_v4_20260723_182716",
+    "epaht_catak_catak_epaht_catak_afc_v4_20260723_184325",
+    "epaht_oliveira_oliveira_epaht_20260707_031207",
+    "epaht_oliveira_oliveira_epaht_20260722_162759",
+    "epaht_oliveira_oliveira_epaht_20260722_162959",
+    "epaht_oliveira_oliveira_epaht_20260722_163158",
+    "epaht_oliveira_oliveira_epaht_20260722_163357",
+    "epaht_oliveira_oliveira_epaht_oliveira_afc_v4_20260707_095024",
+    "epaht_oliveira_oliveira_epaht_oliveira_afc_v4_20260723_185935",
+    "epaht_oliveira_oliveira_epaht_oliveira_afc_v4_20260723_190715",
+    "epaht_oliveira_oliveira_epaht_oliveira_afc_v4_20260723_191455",
+    "epaht_oliveira_oliveira_epaht_oliveira_afc_v4_20260723_192234",
+    "epaht_virussample_epaht_20260707_030415",
+    "epaht_virussample_epaht_20260722_155608",
+    "epaht_virussample_epaht_20260722_155710",
+    "epaht_virussample_epaht_20260722_155812",
+    "epaht_virussample_epaht_20260722_155914",
+    "epaht_virussample_virussample_epaht_virussample_afc_v4_20260707_092758",
+    "epaht_virussample_virussample_epaht_virussample_afc_v4_20260723_172903",
+    "epaht_virussample_virussample_epaht_virussample_afc_v4_20260723_173011",
+    "epaht_virussample_virussample_epaht_virussample_afc_v4_20260723_173118",
+    "epaht_virussample_virussample_epaht_virussample_afc_v4_20260723_173226",
+    "epaht_virusshare_epaht_20260707_030517",
+    "epaht_virusshare_epaht_20260722_160016",
+    "epaht_virusshare_epaht_20260722_160150",
+    "epaht_virusshare_epaht_20260722_160324",
+    "epaht_virusshare_epaht_20260722_160458",
+    "epaht_virusshare_virusshare_epaht_virusshare_afc_v4_20260707_092905",
+    "epaht_virusshare_virusshare_epaht_virusshare_afc_v4_20260723_173334",
+    "epaht_virusshare_virusshare_epaht_virusshare_afc_v4_20260723_173846",
+    "epaht_virusshare_virusshare_epaht_virusshare_afc_v4_20260723_174357",
+    "epaht_virusshare_virusshare_epaht_virusshare_afc_v4_20260723_174910",
+    "epaht_winmet_v2_winmet_epaht_winmet_afc_v4_20260707_135334",
+    "epaht_winmet_v2_winmet_epaht_winmet_afc_v4_20260724_110945",
+    "epaht_winmet_v2_winmet_epaht_winmet_afc_v4_20260724_112038",
+    "epaht_winmet_v2_winmet_epaht_winmet_afc_v4_20260724_113133",
+    "epaht_winmet_v2_winmet_epaht_winmet_afc_v4_20260724_114228",
+    "epaht_winmet_winmet_epaht_winmet_20260707_043341",
+    "epaht_winmet_winmet_epaht_winmet_20260722_215516",
+    "epaht_winmet_winmet_epaht_winmet_20260722_215908",
+    "epaht_winmet_winmet_epaht_winmet_20260722_220300",
+    "epaht_winmet_winmet_epaht_winmet_20260722_220653",
+    "lstm_avast_lstm_20260707_030102",
+    "lstm_avast_lstm_20260722_154245",
+    "lstm_avast_lstm_20260722_154547",
+    "lstm_avast_lstm_20260722_154848",
+    "lstm_avast_lstm_20260722_155150",
+    "lstm_catak_lstm_20260707_025945",
+    "lstm_catak_lstm_20260722_153751",
+    "lstm_catak_lstm_20260722_153825",
+    "lstm_catak_lstm_20260722_153859",
+    "lstm_catak_lstm_20260722_153934",
+    "lstm_oliveira_oliveira_lstm_20260707_030017",
+    "lstm_oliveira_oliveira_lstm_20260722_154006",
+    "lstm_oliveira_oliveira_lstm_20260722_154044",
+    "lstm_oliveira_oliveira_lstm_20260722_154122",
+    "lstm_oliveira_oliveira_lstm_20260722_154200",
+    "lstm_virussample_virussample_lstm_20260707_025846",
+    "lstm_virussample_virussample_lstm_20260722_153357",
+    "lstm_virussample_virussample_lstm_20260722_153408",
+    "lstm_virussample_virussample_lstm_20260722_153420",
+    "lstm_virussample_virussample_lstm_20260722_153431",
+    "lstm_virusshare_lstm_20260707_025857",
+    "lstm_virusshare_lstm_20260722_153443",
+    "lstm_virusshare_lstm_20260722_153529",
+    "lstm_virusshare_lstm_20260722_153615",
+    "lstm_virusshare_lstm_20260722_153702",
+    "lstm_winmet_lstm_20260707_030355",
+    "lstm_winmet_lstm_20260722_155444",
+    "lstm_winmet_lstm_20260722_155506",
+    "lstm_winmet_lstm_20260722_155526",
+    "lstm_winmet_lstm_20260722_155548",
+    "rtf_rtx5000_avast_avast_rtf_20260706_015150",
+    "rtf_rtx5000_avast_avast_rtf_20260721_125505",
+    "rtf_rtx5000_avast_avast_rtf_20260721_191537",
+    "rtf_rtx5000_avast_avast_rtf_20260722_013917",
+    "rtf_rtx5000_avast_avast_rtf_20260722_075919",
+    "rtf_rtx5000_catak_catak_20260703_031435",
+    "rtf_rtx5000_catak_catak_20260721_010748",
+    "rtf_rtx5000_catak_catak_20260721_013909",
+    "rtf_rtx5000_catak_catak_20260721_021017",
+    "rtf_rtx5000_catak_catak_20260721_024123",
+    "rtf_rtx5000_oliveira_oliveira_rtf_20260703_034543",
+    "rtf_rtx5000_oliveira_oliveira_rtf_20260721_031232",
+    "rtf_rtx5000_oliveira_oliveira_rtf_20260721_053802",
+    "rtf_rtx5000_oliveira_oliveira_rtf_20260721_080332",
+    "rtf_rtx5000_oliveira_oliveira_rtf_20260721_102914",
+    "rtf_rtx5000_virussample_virussample_20260702_124408",
+    "rtf_rtx5000_virussample_virussample_20260720_195827",
+    "rtf_rtx5000_virussample_virussample_20260720_202819",
+    "rtf_rtx5000_virussample_virussample_20260720_205811",
+    "rtf_rtx5000_virussample_virussample_20260720_212803",
+    "rtf_rtx5000_virusshare_virusshare_20260703_022706",
+    "rtf_rtx5000_virusshare_virusshare_20260720_215800",
+    "rtf_rtx5000_virusshare_virusshare_20260720_224527",
+    "rtf_rtx5000_virusshare_virusshare_20260720_233252",
+    "rtf_rtx5000_virusshare_virusshare_20260721_002016",
+    "rtf_rtx5000_winmet_winmet_rtf_20260706_125434",
+    "rtf_rtx5000_winmet_winmet_rtf_20260722_142020",
+    "rtf_rtx5000_winmet_winmet_rtf_20260722_143843",
+    "rtf_rtx5000_winmet_winmet_rtf_20260722_145708",
+    "rtf_rtx5000_winmet_winmet_rtf_20260722_151532"
+  ],
+  "headline_runs": [
+    {
+      "dataset": "oliveira",
+      "method": "EPAHT+AFC",
+      "run_id": "epaht_oliveira_oliveira_epaht_oliveira_afc_v4_20260707_095024",
+      "test": {
+        "precision": 0.567321417270062,
+        "recall": 0.5037346981146386,
+        "acc": 0.7441459206310082,
+        "mcc": 0.4963072792409451,
+        "f1": 0.5106726427687605,
+        "auc": 0.8618698672759132
+      },
+      "per_class_test": {
+        "per_class": {
+          "Trojan": {
+            "precision": 0.9537630104083267,
+            "recall": 0.7449968730456535,
+            "f1": 0.8365519662921348,
+            "support": 6396
+          },
+          "Adware": {
+            "precision": 0.34265458842063806,
+            "recall": 0.7988980716253443,
+            "f1": 0.4796030871003308,
+            "support": 1089
+          },
+          "Downloader": {
+            "precision": 0.7135802469135802,
+            "recall": 0.7410256410256411,
+            "f1": 0.7270440251572327,
+            "support": 390
+          },
+          "Ransomware": {
+            "precision": 0.9333333333333333,
+            "recall": 0.8641975308641975,
+            "f1": 0.8974358974358975,
+            "support": 81
+          },
+          "Agent": {
+            "precision": 0.4482758620689655,
+            "recall": 0.29545454545454547,
+            "f1": 0.3561643835616438,
+            "support": 44
+          },
+          "Riskware": {
+            "precision": 0.5,
+            "recall": 0.23255813953488372,
+            "f1": 0.31746031746031744,
+            "support": 43
+          },
+          "Backdoor": {
+            "precision": 0.5,
+            "recall": 0.48148148148148145,
+            "f1": 0.49056603773584906,
+            "support": 27
+          },
+          "Dropper": {
+            "precision": 0.21428571428571427,
+            "recall": 0.125,
+            "f1": 0.15789473684210525,
+            "support": 24
+          },
+          "Virus": {
+            "precision": 0.5,
+            "recall": 0.25,
+            "f1": 0.3333333333333333,
+            "support": 20
+          }
+        },
+        "macro_avg": {
+          "precision": 0.567321417270062,
+          "recall": 0.5037346981146386,
+          "f1": 0.5106726427687605
+        },
+        "weighted_avg": {
+          "precision": 0.8500347982168991,
+          "recall": 0.7441459206310082,
+          "f1": 0.7742342945104307
+        },
+        "balanced_accuracy": 0.5037346981146386,
+        "confusion_matrix": [
+          [
+            4765,
+            1530,
+            48,
+            4,
+            15,
+            8,
+            11,
+            10,
+            5
+          ],
+          [
+            162,
+            870,
+            54,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            14,
+            86,
+            289,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            10,
+            1,
+            0,
+            70,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            15,
+            11,
+            4,
+            0,
+            13,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            9,
+            20,
+            4,
+            0,
+            0,
+            10,
+            0,
+            0,
+            0
+          ],
+          [
+            9,
+            4,
+            0,
+            0,
+            1,
+            0,
+            13,
+            0,
+            0
+          ],
+          [
+            7,
+            9,
+            4,
+            0,
+            0,
+            0,
+            1,
+            3,
+            0
+          ],
+          [
+            5,
+            8,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5
+          ]
+        ],
+        "class_names": [
+          "Trojan",
+          "Adware",
+          "Downloader",
+          "Ransomware",
+          "Agent",
+          "Riskware",
+          "Backdoor",
+          "Dropper",
+          "Virus"
+        ]
+      }
+    },
+    {
+      "dataset": "oliveira",
+      "method": "BERT+AFC",
+      "run_id": "bert_oliveira_oliveira_afc_20260707_053124",
+      "test": {
+        "precision": 0.5386297057351732,
+        "recall": 0.4435826219989464,
+        "acc": 0.8720729603155041,
+        "mcc": 0.6228359077962965,
+        "f1": 0.4769705145230133,
+        "auc": 0.8469878744235918
+      },
+      "per_class_test": {
+        "per_class": {
+          "Trojan": {
+            "precision": 0.9188619599578504,
+            "recall": 0.9543464665415885,
+            "f1": 0.9362681187207608,
+            "support": 6396
+          },
+          "Adware": {
+            "precision": 0.6339869281045751,
+            "recall": 0.5344352617079889,
+            "f1": 0.5799701046337817,
+            "support": 1089
+          },
+          "Downloader": {
+            "precision": 0.6883720930232559,
+            "recall": 0.7589743589743589,
+            "f1": 0.7219512195121951,
+            "support": 390
+          },
+          "Ransomware": {
+            "precision": 0.971830985915493,
+            "recall": 0.8518518518518519,
+            "f1": 0.9078947368421053,
+            "support": 81
+          },
+          "Agent": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 44
+          },
+          "Riskware": {
+            "precision": 0.34615384615384615,
+            "recall": 0.20930232558139536,
+            "f1": 0.2608695652173913,
+            "support": 43
+          },
+          "Backdoor": {
+            "precision": 0.75,
+            "recall": 0.3333333333333333,
+            "f1": 0.46153846153846156,
+            "support": 27
+          },
+          "Dropper": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 24
+          },
+          "Virus": {
+            "precision": 0.5384615384615384,
+            "recall": 0.35,
+            "f1": 0.42424242424242425,
+            "support": 20
+          }
+        },
+        "macro_avg": {
+          "precision": 0.5386297057351732,
+          "recall": 0.4435826219989464,
+          "f1": 0.4769705145230133
+        },
+        "weighted_avg": {
+          "precision": 0.8578432502943509,
+          "recall": 0.8720729603155041,
+          "f1": 0.863596568748937
+        },
+        "balanced_accuracy": 0.4435826219989464,
+        "confusion_matrix": [
+          [
+            6104,
+            235,
+            36,
+            2,
+            0,
+            12,
+            3,
+            1,
+            3
+          ],
+          [
+            422,
+            582,
+            84,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            28,
+            66,
+            296,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            10,
+            0,
+            0,
+            69,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            31,
+            8,
+            4,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            15,
+            15,
+            4,
+            0,
+            0,
+            9,
+            0,
+            0,
+            0
+          ],
+          [
+            16,
+            2,
+            0,
+            0,
+            0,
+            0,
+            9,
+            0,
+            0
+          ],
+          [
+            9,
+            8,
+            4,
+            0,
+            0,
+            2,
+            0,
+            0,
+            1
+          ],
+          [
+            8,
+            2,
+            2,
+            0,
+            0,
+            1,
+            0,
+            0,
+            7
+          ]
+        ],
+        "class_names": [
+          "Trojan",
+          "Adware",
+          "Downloader",
+          "Ransomware",
+          "Agent",
+          "Riskware",
+          "Backdoor",
+          "Dropper",
+          "Virus"
+        ]
+      }
+    },
+    {
+      "dataset": "catak",
+      "method": "EPAHT+AFC",
+      "run_id": "epaht_catak_catak_epaht_catak_afc_v4_20260707_093416",
+      "test": {
+        "precision": 0.5750011172397351,
+        "recall": 0.5606945978780411,
+        "acc": 0.5485232067510548,
+        "mcc": 0.4800518296057923,
+        "f1": 0.5666195661382516,
+        "auc": 0.8618787572520183
+      },
+      "per_class_test": {
+        "per_class": {
+          "Downloader": {
+            "precision": 0.6621004566210046,
+            "recall": 0.7213930348258707,
+            "f1": 0.6904761904761905,
+            "support": 201
+          },
+          "Virus": {
+            "precision": 0.7988826815642458,
+            "recall": 0.715,
+            "f1": 0.7546174142480211,
+            "support": 200
+          },
+          "Trojan": {
+            "precision": 0.3422222222222222,
+            "recall": 0.385,
+            "f1": 0.3623529411764706,
+            "support": 200
+          },
+          "Backdoor": {
+            "precision": 0.5144230769230769,
+            "recall": 0.535,
+            "f1": 0.5245098039215687,
+            "support": 200
+          },
+          "Worms": {
+            "precision": 0.515,
+            "recall": 0.515,
+            "f1": 0.515,
+            "support": 200
+          },
+          "Dropper": {
+            "precision": 0.5096774193548387,
+            "recall": 0.4438202247191011,
+            "f1": 0.4744744744744745,
+            "support": 178
+          },
+          "Spyware": {
+            "precision": 0.40476190476190477,
+            "recall": 0.40718562874251496,
+            "f1": 0.4059701492537313,
+            "support": 167
+          },
+          "Adware": {
+            "precision": 0.8529411764705882,
+            "recall": 0.7631578947368421,
+            "f1": 0.8055555555555556,
+            "support": 76
+          }
+        },
+        "macro_avg": {
+          "precision": 0.5750011172397351,
+          "recall": 0.5606945978780411,
+          "f1": 0.5666195661382516
+        },
+        "weighted_avg": {
+          "precision": 0.5557870155238361,
+          "recall": 0.5485232067510548,
+          "f1": 0.5510249224746682
+        },
+        "balanced_accuracy": 0.5606945978780411,
+        "confusion_matrix": [
+          [
+            145,
+            2,
+            11,
+            8,
+            11,
+            12,
+            8,
+            4
+          ],
+          [
+            4,
+            143,
+            18,
+            4,
+            14,
+            8,
+            8,
+            1
+          ],
+          [
+            23,
+            10,
+            77,
+            30,
+            25,
+            15,
+            18,
+            2
+          ],
+          [
+            5,
+            8,
+            32,
+            107,
+            17,
+            9,
+            22,
+            0
+          ],
+          [
+            10,
+            7,
+            26,
+            26,
+            103,
+            9,
+            19,
+            0
+          ],
+          [
+            21,
+            3,
+            22,
+            15,
+            13,
+            79,
+            24,
+            1
+          ],
+          [
+            8,
+            5,
+            34,
+            17,
+            15,
+            18,
+            68,
+            2
+          ],
+          [
+            3,
+            1,
+            5,
+            1,
+            2,
+            5,
+            1,
+            58
+          ]
+        ],
+        "class_names": [
+          "Downloader",
+          "Virus",
+          "Trojan",
+          "Backdoor",
+          "Worms",
+          "Dropper",
+          "Spyware",
+          "Adware"
+        ]
+      }
+    },
+    {
+      "dataset": "catak",
+      "method": "BERT",
+      "run_id": "bert_catak_catak_20260702_083814",
+      "test": {
+        "precision": 0.5809805791877127,
+        "recall": 0.5698799644019374,
+        "acc": 0.5548523206751055,
+        "mcc": 0.4878142635113772,
+        "f1": 0.5742621486980488,
+        "auc": 0.8733056133639495
+      },
+      "per_class_test": {
+        "per_class": {
+          "Downloader": {
+            "precision": 0.6589861751152074,
+            "recall": 0.7114427860696517,
+            "f1": 0.6842105263157895,
+            "support": 201
+          },
+          "Virus": {
+            "precision": 0.9011627906976745,
+            "recall": 0.775,
+            "f1": 0.8333333333333334,
+            "support": 200
+          },
+          "Trojan": {
+            "precision": 0.4,
+            "recall": 0.36,
+            "f1": 0.37894736842105264,
+            "support": 200
+          },
+          "Backdoor": {
+            "precision": 0.4714285714285714,
+            "recall": 0.495,
+            "f1": 0.48292682926829267,
+            "support": 200
+          },
+          "Worms": {
+            "precision": 0.5024630541871922,
+            "recall": 0.51,
+            "f1": 0.5062034739454094,
+            "support": 200
+          },
+          "Dropper": {
+            "precision": 0.5248618784530387,
+            "recall": 0.5337078651685393,
+            "f1": 0.5292479108635098,
+            "support": 178
+          },
+          "Spyware": {
+            "precision": 0.32978723404255317,
+            "recall": 0.3712574850299401,
+            "f1": 0.3492957746478873,
+            "support": 167
+          },
+          "Adware": {
+            "precision": 0.8591549295774648,
+            "recall": 0.8026315789473685,
+            "f1": 0.8299319727891157,
+            "support": 76
+          }
+        },
+        "macro_avg": {
+          "precision": 0.5809805791877127,
+          "recall": 0.5698799644019374,
+          "f1": 0.5742621486980488
+        },
+        "weighted_avg": {
+          "precision": 0.56347592233367,
+          "recall": 0.5548523206751055,
+          "f1": 0.557961933343858
+        },
+        "balanced_accuracy": 0.5698799644019374,
+        "confusion_matrix": [
+          [
+            143,
+            2,
+            17,
+            6,
+            14,
+            6,
+            11,
+            2
+          ],
+          [
+            2,
+            155,
+            14,
+            5,
+            6,
+            9,
+            8,
+            1
+          ],
+          [
+            23,
+            2,
+            72,
+            26,
+            29,
+            22,
+            23,
+            3
+          ],
+          [
+            8,
+            1,
+            23,
+            99,
+            21,
+            11,
+            34,
+            3
+          ],
+          [
+            13,
+            6,
+            19,
+            23,
+            102,
+            9,
+            28,
+            0
+          ],
+          [
+            16,
+            3,
+            16,
+            20,
+            9,
+            95,
+            19,
+            0
+          ],
+          [
+            10,
+            3,
+            13,
+            30,
+            22,
+            26,
+            62,
+            1
+          ],
+          [
+            2,
+            0,
+            6,
+            1,
+            0,
+            3,
+            3,
+            61
+          ]
+        ],
+        "class_names": [
+          "Downloader",
+          "Virus",
+          "Trojan",
+          "Backdoor",
+          "Worms",
+          "Dropper",
+          "Spyware",
+          "Adware"
+        ]
+      }
+    }
+  ]
+}

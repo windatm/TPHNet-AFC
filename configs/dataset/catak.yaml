@@ -1,0 +1,19 @@
+# Catak (mal-api-2019), RTF class order.
+name: catak
+kind: csv
+path: datasets/datasets/CatakPreprocessed.csv
+text_column: api
+label_column: class
+label_order:
+  - Downloader
+  - Virus
+  - Trojan
+  - Backdoor
+  - Worms
+  - Dropper
+  - Spyware
+  - Adware
+test_size: 0.2
+val_size: 0.2
+random_state: 75
+split_strategy: random

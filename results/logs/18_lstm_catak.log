@@ -1,0 +1,57 @@
+17:54:46 | INFO    | malware_clf.utils.experiment | Experiment config saved to results/lstm_catak_lstm_20260616_105446/experiment.yaml
+17:54:46 | INFO    | malware_clf.utils.experiment | Starting experiment:
+Run ID:     lstm_catak_lstm_20260616_105446
+Output dir: results/lstm_catak_lstm_20260616_105446
+Model:      lstm (lstm)
+Dataset:    catak (catak)
+Train cfg:  lstm
+Training:   epochs=20 batch=128 lr=0.001 fp16=False
+Splits:     train=4548 val=1137 test=1422 classes=8
+17:54:50 | INFO    | malware_clf.models.lstm | LSTM epoch 1/20 loss=71.6362
+17:54:51 | INFO    | malware_clf.models.lstm | LSTM epoch 2/20 loss=61.5895
+17:54:52 | INFO    | malware_clf.models.lstm | LSTM epoch 3/20 loss=55.1940
+17:54:53 | INFO    | malware_clf.models.lstm | LSTM epoch 4/20 loss=49.9869
+17:54:54 | INFO    | malware_clf.models.lstm | LSTM epoch 5/20 loss=44.1246
+17:54:55 | INFO    | malware_clf.models.lstm | LSTM epoch 6/20 loss=37.7255
+17:54:56 | INFO    | malware_clf.models.lstm | LSTM epoch 7/20 loss=33.0860
+17:54:57 | INFO    | malware_clf.models.lstm | LSTM epoch 8/20 loss=28.1762
+17:54:58 | INFO    | malware_clf.models.lstm | LSTM epoch 9/20 loss=24.5337
+17:54:59 | INFO    | malware_clf.models.lstm | LSTM epoch 10/20 loss=20.6662
+17:55:00 | INFO    | malware_clf.models.lstm | LSTM epoch 11/20 loss=18.6357
+17:55:01 | INFO    | malware_clf.models.lstm | LSTM epoch 12/20 loss=16.5544
+17:55:02 | INFO    | malware_clf.models.lstm | LSTM epoch 13/20 loss=14.3897
+17:55:03 | INFO    | malware_clf.models.lstm | LSTM epoch 14/20 loss=12.8395
+17:55:04 | INFO    | malware_clf.models.lstm | LSTM epoch 15/20 loss=10.6717
+17:55:05 | INFO    | malware_clf.models.lstm | LSTM epoch 16/20 loss=9.5704
+17:55:06 | INFO    | malware_clf.models.lstm | LSTM epoch 17/20 loss=8.4284
+17:55:07 | INFO    | malware_clf.models.lstm | LSTM epoch 18/20 loss=8.5300
+17:55:08 | INFO    | malware_clf.models.lstm | LSTM epoch 19/20 loss=7.3186
+17:55:09 | INFO    | malware_clf.models.lstm | LSTM epoch 20/20 loss=6.7115
+17:55:10 | INFO    | malware_clf.runner | LSTM checkpoint saved to results/lstm_catak_lstm_20260616_105446/lstm.pt
+17:55:10 | INFO    | malware_clf.utils.experiment | Metrics saved to results/lstm_catak_lstm_20260616_105446/metrics.json
+Run ID:     lstm_catak_lstm_20260616_105446
+Output dir: results/lstm_catak_lstm_20260616_105446
+Model:      lstm (lstm)
+Dataset:    catak (catak)
+Train cfg:  lstm
+Training:   epochs=20 batch=128 lr=0.001 fp16=False
+Splits:     train=4548 val=1137 test=1422 classes=8
+{
+  "run_dir": "results/lstm_catak_lstm_20260616_105446",
+  "val": {
+    "precision": 0.483457570090011,
+    "recall": 0.4742981962763294,
+    "acc": 0.4635004397537379,
+    "mcc": 0.38199888903522344,
+    "f1": 0.47777460203620464,
+    "auc": 0.7889643038471792
+  },
+  "test": {
+    "precision": 0.4863981736701814,
+    "recall": 0.47598902717967156,
+    "acc": 0.46624472573839665,
+    "mcc": 0.38544621458501616,
+    "f1": 0.4790338321251707,
+    "auc": 0.7897918715679522
+  }
+}

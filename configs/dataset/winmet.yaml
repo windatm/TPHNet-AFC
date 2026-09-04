@@ -1,0 +1,21 @@
+# WinMET CAPE family labels; random stratified split.
+name: winmet
+kind: winmet
+path: data/winmet.parquet
+text_column: api
+label_column: class
+label_order:
+  - Crifi
+  - Redline
+  - Amadey
+  - Virlock
+  - Disabler
+  - Autorun
+  - Strab
+  - Loki
+  - Taskun
+  - Mint
+test_size: 0.2
+val_size: 0.2
+random_state: 75
+split_strategy: random

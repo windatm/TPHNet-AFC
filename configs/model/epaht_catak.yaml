@@ -1,0 +1,10 @@
+# max_chunks=32 to fit 16 GB.
+name: epaht
+max_words: 800
+embed_dim: 16
+hidden_dim: 128
+dropout: 0.2
+chunk_size: 128
+max_chunks: 32
+num_phases: 4
+recency_bias_init: 1.0

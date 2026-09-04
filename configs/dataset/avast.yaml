@@ -1,0 +1,21 @@
+# AVAST family labels; official train/test split.
+name: avast
+kind: avast
+path: data/avast.parquet
+text_column: api
+label_column: class
+# 10 families ordered by descending frequency in public_labels.csv.
+label_order:
+  - Emotet
+  - Swisyn
+  - Qakbot
+  - Trickbot
+  - Lokibot
+  - njRAT
+  - Zeus
+  - Ursnif
+  - Adload
+  - HarHar
+val_size: 0.2
+random_state: 75
+split_strategy: fixed

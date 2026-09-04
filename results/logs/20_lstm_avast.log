@@ -1,0 +1,57 @@
+12:12:21 | INFO    | malware_clf.utils.experiment | Experiment config saved to results/lstm_avast_lstm_20260619_051221/experiment.yaml
+12:12:21 | INFO    | malware_clf.utils.experiment | Starting experiment:
+Run ID:     lstm_avast_lstm_20260619_051221
+Output dir: results/lstm_avast_lstm_20260619_051221
+Model:      lstm (lstm)
+Dataset:    avast (avast)
+Train cfg:  lstm
+Training:   epochs=20 batch=128 lr=0.001 fp16=False
+Splits:     train=27424 val=6857 test=14693 classes=10
+12:12:51 | INFO    | malware_clf.models.lstm | LSTM epoch 1/20 loss=91.2352
+12:12:56 | INFO    | malware_clf.models.lstm | LSTM epoch 2/20 loss=37.8340
+12:13:02 | INFO    | malware_clf.models.lstm | LSTM epoch 3/20 loss=26.1621
+12:13:07 | INFO    | malware_clf.models.lstm | LSTM epoch 4/20 loss=15.3769
+12:13:12 | INFO    | malware_clf.models.lstm | LSTM epoch 5/20 loss=10.2166
+12:13:17 | INFO    | malware_clf.models.lstm | LSTM epoch 6/20 loss=6.6088
+12:13:23 | INFO    | malware_clf.models.lstm | LSTM epoch 7/20 loss=4.4852
+12:13:28 | INFO    | malware_clf.models.lstm | LSTM epoch 8/20 loss=4.5084
+12:13:33 | INFO    | malware_clf.models.lstm | LSTM epoch 9/20 loss=2.7613
+12:13:38 | INFO    | malware_clf.models.lstm | LSTM epoch 10/20 loss=3.1688
+12:13:44 | INFO    | malware_clf.models.lstm | LSTM epoch 11/20 loss=2.4319
+12:13:49 | INFO    | malware_clf.models.lstm | LSTM epoch 12/20 loss=5.1856
+12:13:54 | INFO    | malware_clf.models.lstm | LSTM epoch 13/20 loss=4.0778
+12:14:00 | INFO    | malware_clf.models.lstm | LSTM epoch 14/20 loss=1.8726
+12:14:05 | INFO    | malware_clf.models.lstm | LSTM epoch 15/20 loss=1.0258
+12:14:10 | INFO    | malware_clf.models.lstm | LSTM epoch 16/20 loss=1.1578
+12:14:15 | INFO    | malware_clf.models.lstm | LSTM epoch 17/20 loss=0.9688
+12:14:21 | INFO    | malware_clf.models.lstm | LSTM epoch 18/20 loss=1.7756
+12:14:26 | INFO    | malware_clf.models.lstm | LSTM epoch 19/20 loss=2.0050
+12:14:31 | INFO    | malware_clf.models.lstm | LSTM epoch 20/20 loss=2.8862
+12:14:43 | INFO    | malware_clf.runner | LSTM checkpoint saved to results/lstm_avast_lstm_20260619_051221/lstm.pt
+12:14:43 | INFO    | malware_clf.utils.experiment | Metrics saved to results/lstm_avast_lstm_20260619_051221/metrics.json
+Run ID:     lstm_avast_lstm_20260619_051221
+Output dir: results/lstm_avast_lstm_20260619_051221
+Model:      lstm (lstm)
+Dataset:    avast (avast)
+Train cfg:  lstm
+Training:   epochs=20 batch=128 lr=0.001 fp16=False
+Splits:     train=27424 val=6857 test=14693 classes=10
+{
+  "run_dir": "results/lstm_avast_lstm_20260619_051221",
+  "val": {
+    "precision": 0.9619685296300886,
+    "recall": 0.9555694398092125,
+    "acc": 0.9689368528511011,
+    "mcc": 0.9618478477626131,
+    "f1": 0.958414498872491,
+    "auc": 0.9972150193132836
+  },
+  "test": {
+    "precision": 0.9477763912374527,
+    "recall": 0.9466132634204069,
+    "acc": 0.9646089974817941,
+    "mcc": 0.95650921658924,
+    "f1": 0.9466602163014046,
+    "auc": 0.995784167136527
+  }
+}

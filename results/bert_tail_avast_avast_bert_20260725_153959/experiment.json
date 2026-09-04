@@ -1,0 +1,100 @@
+{
+  "run_id": "bert_tail_avast_avast_bert_20260725_153959",
+  "run_dir": "/home/wind/phongtt/malware-detection/results/bert_tail_avast_avast_bert_20260725_153959",
+  "created_at": "2026-07-25T15:39:59.223499+00:00",
+  "labels": {
+    "model": "bert_tail",
+    "dataset": "avast",
+    "train": "avast_bert",
+    "seed": 75,
+    "split_seed": 75
+  },
+  "config_files": {
+    "dataset": "configs/dataset/avast.yaml",
+    "model": "configs/model/bert_tail.yaml",
+    "train": "configs/train/avast_bert.yaml"
+  },
+  "dataset": {
+    "name": "avast",
+    "kind": "avast",
+    "path": "data/avast.parquet",
+    "text_column": "api",
+    "label_column": "class",
+    "label_order": [
+      "Emotet",
+      "Swisyn",
+      "Qakbot",
+      "Trickbot",
+      "Lokibot",
+      "njRAT",
+      "Zeus",
+      "Ursnif",
+      "Adload",
+      "HarHar"
+    ],
+    "test_size": 0.2,
+    "val_size": 0.2,
+    "random_state": 75,
+    "split_strategy": "fixed",
+    "preprocess": null
+  },
+  "model": {
+    "name": "bert",
+    "pretrained_name": "bert-base-cased",
+    "max_length": 512,
+    "n_estimators": 5,
+    "embed_dim": 16,
+    "hidden_dim": 100,
+    "max_words": 800,
+    "lstm_max_len": 500,
+    "dropout": 0.2,
+    "chunk_size": 128,
+    "max_chunks": 64,
+    "num_phases": 4,
+    "recency_bias_init": 1.0,
+    "transformer_layers": 4,
+    "transformer_heads": null,
+    "gnn_layers": 2,
+    "truncation_side": "left"
+  },
+  "train": {
+    "output_dir": "/home/wind/phongtt/malware-detection/results/bert_tail_avast_avast_bert_20260725_153959",
+    "epochs": 10,
+    "batch_size": 4,
+    "learning_rate": 5e-05,
+    "weight_decay": 0.01,
+    "warmup_steps": 500,
+    "lr_scheduler_type": "cosine",
+    "seed": 75,
+    "use_class_weights": true,
+    "fp16": true,
+    "dataloader_num_workers": 0,
+    "gradient_accumulation_steps": 2,
+    "metric_for_best_model": "eval_auc",
+    "save_total_limit": 1,
+    "cleanup_checkpoints": true,
+    "use_afc_loss": false,
+    "afc_alpha": 0.1,
+    "afc_tau_base": 0.07,
+    "afc_adaptive": true,
+    "afc_warmup_epochs": 0,
+    "collect_training_history": true,
+    "collect_per_class": true,
+    "benchmark_inference": true,
+    "inference_warmup_batches": 1,
+    "logging_steps": 100
+  },
+  "splits": {
+    "train": 27424,
+    "val": 6857,
+    "test": 14693
+  },
+  "num_classes": 10,
+  "finished_at": "2026-07-25T18:20:24.002749+00:00",
+  "total_wall_s": 9633.4198,
+  "test_headline": {
+    "auc": 0.9970096054335897,
+    "f1": 0.9471664724634914,
+    "mcc": 0.9574189010335704
+  }
+}

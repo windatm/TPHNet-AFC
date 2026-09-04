@@ -1,0 +1,290 @@
+{
+  "run_id": "epaht_virussample_virussample_epaht_virussample_afc_v4_20260723_173118",
+  "run_dir": "/home/wind/phongtt/malware-detection/results/epaht_virussample_virussample_epaht_virussample_afc_v4_20260723_173118",
+  "labels": {
+    "model": "epaht_virussample",
+    "dataset": "virussample",
+    "train": "epaht_virussample_afc_v4",
+    "seed": 456,
+    "split_seed": 456
+  },
+  "dataset": "virussample",
+  "model": "epaht_virussample",
+  "train": "epaht_virussample_afc_v4",
+  "test_headline": {
+    "precision": 0.7654776734209121,
+    "recall": 0.8737355889475706,
+    "acc": 0.9152542372881356,
+    "mcc": 0.8470453784450827,
+    "f1": 0.7961520557028411,
+    "auc": 0.9858781158808763
+  },
+  "per_class": {
+    "val": {
+      "per_class": {
+        "Trojan": {
+          "precision": 0.9609292502639916,
+          "recall": 0.9247967479674797,
+          "f1": 0.9425168306576903,
+          "support": 984,
+          "tp": 910,
+          "fp": 37,
+          "fn": 74,
+          "tn": 536
+        },
+        "Virus": {
+          "precision": 0.9788359788359788,
+          "recall": 0.9762532981530343,
+          "f1": 0.9775429326287979,
+          "support": 379,
+          "tp": 370,
+          "fp": 8,
+          "fn": 9,
+          "tn": 1170
+        },
+        "Backdoor": {
+          "precision": 0.96875,
+          "recall": 0.8732394366197183,
+          "f1": 0.9185185185185185,
+          "support": 71,
+          "tp": 62,
+          "fp": 2,
+          "fn": 9,
+          "tn": 1484
+        },
+        "Worms": {
+          "precision": 0.7283950617283951,
+          "recall": 0.8309859154929577,
+          "f1": 0.7763157894736842,
+          "support": 71,
+          "tp": 59,
+          "fp": 22,
+          "fn": 12,
+          "tn": 1464
+        },
+        "Adware": {
+          "precision": 0.7,
+          "recall": 0.7777777777777778,
+          "f1": 0.7368421052631579,
+          "support": 36,
+          "tp": 28,
+          "fp": 12,
+          "fn": 8,
+          "tn": 1509
+        },
+        "Agent": {
+          "precision": 0.2978723404255319,
+          "recall": 0.875,
+          "f1": 0.4444444444444444,
+          "support": 16,
+          "tp": 14,
+          "fp": 33,
+          "fn": 2,
+          "tn": 1508
+        }
+      },
+      "macro_avg": {
+        "precision": 0.7724637718756496,
+        "recall": 0.8763421960018279,
+        "f1": 0.7993634368310488
+      },
+      "weighted_avg": {
+        "precision": 0.9421942678664921,
+        "recall": 0.9267822736030829,
+        "f1": 0.9324958224800983
+      },
+      "balanced_accuracy": 0.8763421960018279,
+      "confusion_matrix": [
+        [
+          910,
+          7,
+          2,
+          21,
+          11,
+          33
+        ],
+        [
+          8,
+          370,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          7,
+          1,
+          62,
+          0,
+          1,
+          0
+        ],
+        [
+          12,
+          0,
+          0,
+          59,
+          0,
+          0
+        ],
+        [
+          8,
+          0,
+          0,
+          0,
+          28,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          14
+        ]
+      ],
+      "class_names": [
+        "Trojan",
+        "Virus",
+        "Backdoor",
+        "Worms",
+        "Adware",
+        "Agent"
+      ]
+    },
+    "test": {
+      "per_class": {
+        "Trojan": {
+          "precision": 0.9512605042016806,
+          "recall": 0.9195775792038993,
+          "f1": 0.9351507641470467,
+          "support": 1231,
+          "tp": 1132,
+          "fp": 58,
+          "fn": 99,
+          "tn": 658
+        },
+        "Virus": {
+          "precision": 0.9696312364425163,
+          "recall": 0.9430379746835443,
+          "f1": 0.9561497326203209,
+          "support": 474,
+          "tp": 447,
+          "fp": 14,
+          "fn": 27,
+          "tn": 1459
+        },
+        "Backdoor": {
+          "precision": 0.9302325581395349,
+          "recall": 0.8888888888888888,
+          "f1": 0.9090909090909091,
+          "support": 90,
+          "tp": 80,
+          "fp": 6,
+          "fn": 10,
+          "tn": 1851
+        },
+        "Worms": {
+          "precision": 0.6306306306306306,
+          "recall": 0.7954545454545454,
+          "f1": 0.7035175879396985,
+          "support": 88,
+          "tp": 70,
+          "fp": 41,
+          "fn": 18,
+          "tn": 1818
+        },
+        "Adware": {
+          "precision": 0.7777777777777778,
+          "recall": 0.7954545454545454,
+          "f1": 0.7865168539325843,
+          "support": 44,
+          "tp": 35,
+          "fp": 10,
+          "fn": 9,
+          "tn": 1893
+        },
+        "Agent": {
+          "precision": 0.3333333333333333,
+          "recall": 0.9,
+          "f1": 0.4864864864864865,
+          "support": 20,
+          "tp": 18,
+          "fp": 36,
+          "fn": 2,
+          "tn": 1891
+        }
+      },
+      "macro_avg": {
+        "precision": 0.7654776734209121,
+        "recall": 0.8737355889475706,
+        "f1": 0.7961520557028411
+      },
+      "weighted_avg": {
+        "precision": 0.9300011306435357,
+        "recall": 0.9152542372881356,
+        "f1": 0.9206213481184825
+      },
+      "balanced_accuracy": 0.8737355889475706,
+      "confusion_matrix": [
+        [
+          1132,
+          13,
+          6,
+          36,
+          8,
+          36
+        ],
+        [
+          20,
+          447,
+          0,
+          5,
+          2,
+          0
+        ],
+        [
+          10,
+          0,
+          80,
+          0,
+          0,
+          0
+        ],
+        [
+          17,
+          1,
+          0,
+          70,
+          0,
+          0
+        ],
+        [
+          9,
+          0,
+          0,
+          0,
+          35,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          18
+        ]
+      ],
+      "class_names": [
+        "Trojan",
+        "Virus",
+        "Backdoor",
+        "Worms",
+        "Adware",
+        "Agent"
+      ]
+    }
+  }
+}

@@ -1,0 +1,5 @@
+# RTF, 3 CANINE estimators.
+name: rtf
+pretrained_name: google/canine-c
+max_length: 512
+n_estimators: 3

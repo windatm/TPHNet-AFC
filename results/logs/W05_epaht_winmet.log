@@ -1,0 +1,59 @@
+19:33:20 | INFO    | malware_clf.utils.experiment | Experiment config saved to results/epaht_winmet_winmet_epaht_winmet_20260627_123320/experiment.yaml
+19:33:20 | INFO    | malware_clf.utils.experiment | Starting experiment:
+Run ID:     epaht_winmet_winmet_epaht_winmet_20260627_123320
+Output dir: results/epaht_winmet_winmet_epaht_winmet_20260627_123320
+Model:      epaht_winmet (epaht)
+Dataset:    winmet (winmet)
+Train cfg:  epaht_winmet
+Training:   epochs=20 batch=32 lr=0.001 fp16=False
+Splits:     train=1833 val=459 test=573 classes=10
+19:33:20 | INFO    | malware_clf.models.epaht | EPAHT: building vocabulary from 1833 training samples.
+19:33:22 | INFO    | malware_clf.models.epaht | EPAHT: lazy chunk encoding (chunk_size=64, max_chunks=64).
+19:33:33 | INFO    | malware_clf.models.epaht | EPAHT epoch 1/20 train_loss=1.9222 val_mcc=0.2527
+19:33:44 | INFO    | malware_clf.models.epaht | EPAHT epoch 2/20 train_loss=1.5303 val_mcc=0.4707
+19:33:54 | INFO    | malware_clf.models.epaht | EPAHT epoch 3/20 train_loss=1.2291 val_mcc=0.5613
+19:34:05 | INFO    | malware_clf.models.epaht | EPAHT epoch 4/20 train_loss=1.0934 val_mcc=0.5429
+19:34:16 | INFO    | malware_clf.models.epaht | EPAHT epoch 5/20 train_loss=1.0035 val_mcc=0.6066
+19:34:27 | INFO    | malware_clf.models.epaht | EPAHT epoch 6/20 train_loss=0.9749 val_mcc=0.5643
+19:34:37 | INFO    | malware_clf.models.epaht | EPAHT epoch 7/20 train_loss=0.9336 val_mcc=0.6141
+19:34:48 | INFO    | malware_clf.models.epaht | EPAHT epoch 8/20 train_loss=0.9011 val_mcc=0.6058
+19:34:59 | INFO    | malware_clf.models.epaht | EPAHT epoch 9/20 train_loss=0.8729 val_mcc=0.6105
+19:35:10 | INFO    | malware_clf.models.epaht | EPAHT epoch 10/20 train_loss=0.8786 val_mcc=0.6007
+19:35:21 | INFO    | malware_clf.models.epaht | EPAHT epoch 11/20 train_loss=0.8577 val_mcc=0.6409
+19:35:32 | INFO    | malware_clf.models.epaht | EPAHT epoch 12/20 train_loss=0.8209 val_mcc=0.6663
+19:35:42 | INFO    | malware_clf.models.epaht | EPAHT epoch 13/20 train_loss=0.8194 val_mcc=0.6659
+19:35:53 | INFO    | malware_clf.models.epaht | EPAHT epoch 14/20 train_loss=0.8231 val_mcc=0.6574
+19:36:04 | INFO    | malware_clf.models.epaht | EPAHT epoch 15/20 train_loss=0.7872 val_mcc=0.6499
+19:36:15 | INFO    | malware_clf.models.epaht | EPAHT epoch 16/20 train_loss=0.7825 val_mcc=0.6423
+19:36:26 | INFO    | malware_clf.models.epaht | EPAHT epoch 17/20 train_loss=0.7935 val_mcc=0.6528
+19:36:37 | INFO    | malware_clf.models.epaht | EPAHT epoch 18/20 train_loss=0.7591 val_mcc=0.6934
+19:36:48 | INFO    | malware_clf.models.epaht | EPAHT epoch 19/20 train_loss=0.7142 val_mcc=0.6774
+19:36:58 | INFO    | malware_clf.models.epaht | EPAHT epoch 20/20 train_loss=0.7179 val_mcc=0.6847
+19:37:01 | INFO    | malware_clf.runner | EPAHT checkpoint saved to results/epaht_winmet_winmet_epaht_winmet_20260627_123320/epaht.pt
+19:37:01 | INFO    | malware_clf.utils.experiment | Metrics saved to results/epaht_winmet_winmet_epaht_winmet_20260627_123320/metrics.json
+Run ID:     epaht_winmet_winmet_epaht_winmet_20260627_123320
+Output dir: results/epaht_winmet_winmet_epaht_winmet_20260627_123320
+Model:      epaht_winmet (epaht)
+Dataset:    winmet (winmet)
+Train cfg:  epaht_winmet
+Training:   epochs=20 batch=32 lr=0.001 fp16=False
+Splits:     train=1833 val=459 test=573 classes=10
+{
+  "run_dir": "results/epaht_winmet_winmet_epaht_winmet_20260627_123320",
+  "val": {
+    "precision": 0.700516360584522,
+    "recall": 0.7031687650154347,
+    "acc": 0.7298474945533769,
+    "mcc": 0.6934253177762473,
+    "f1": 0.6951372045308222,
+    "auc": 0.9603774360660923
+  },
+  "test": {
+    "precision": 0.6354176987789127,
+    "recall": 0.6627345987094173,
+    "acc": 0.680628272251309,
+    "mcc": 0.6376041892664739,
+    "f1": 0.643893679758232,
+    "auc": 0.9513403814782413
+  }
+}

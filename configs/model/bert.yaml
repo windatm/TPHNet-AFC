@@ -1,0 +1,3 @@
+name: bert
+pretrained_name: bert-base-cased
+max_length: 512

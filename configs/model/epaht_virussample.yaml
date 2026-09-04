@@ -1,0 +1,9 @@
+name: epaht
+max_words: 800
+embed_dim: 16
+hidden_dim: 100
+dropout: 0.2
+chunk_size: 16
+max_chunks: 4
+num_phases: 2
+recency_bias_init: 0.0

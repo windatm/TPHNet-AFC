@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "malware-clf"
+version = "0.1.0"
+description = "Malware family classification from Windows API call sequences."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "GPL-3.0-or-later" }
+keywords = ["malware", "classification", "transformers", "api-calls", "security"]
+
+dependencies = [
+    "numpy>=1.23",
+    "pandas>=1.5",
+    "scikit-learn>=1.1",
+    "scipy>=1.9",
+    "torch>=2.0",
+    "transformers>=4.30",
+    "datasets>=2.14",
+    "pyarrow>=12.0",
+    "pyyaml>=6.0",
+    "tqdm>=4.64",
+    "psutil>=5.9",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.1",
+    "black>=23.0",
+    "isort>=5.10",
+]
+
+[project.scripts]
+malware-clf = "malware_clf.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+malware_clf = ["py.typed"]
+
+[tool.black]
+line-length = 100
+target-version = ["py39", "py310", "py311", "py312"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+known_first_party = ["malware_clf"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W", "UP", "B", "C4", "SIM"]
+ignore = ["B008"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["malware_clf"]

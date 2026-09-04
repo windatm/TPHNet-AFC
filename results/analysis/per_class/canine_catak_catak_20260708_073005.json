@@ -1,0 +1,334 @@
+{
+  "run_id": "canine_catak_catak_20260708_073005",
+  "run_dir": "/home/wind/phongtt/malware-detection/results/canine_catak_catak_20260708_073005",
+  "labels": {
+    "model": "canine",
+    "dataset": "catak",
+    "train": "catak",
+    "seed": 42,
+    "split_seed": 42
+  },
+  "dataset": "catak",
+  "model": "canine",
+  "train": "catak",
+  "test_headline": {
+    "precision": 0.05727960696074016,
+    "recall": 0.13062500000000002,
+    "acc": 0.1469760900140647,
+    "mcc": 0.013471060231261588,
+    "f1": 0.05478513734327688,
+    "auc": 0.5460819714811883
+  },
+  "per_class": {
+    "val": {
+      "per_class": {
+        "Downloader": {
+          "precision": 0.26229508196721313,
+          "recall": 0.1,
+          "f1": 0.14479638009049775,
+          "support": 160
+        },
+        "Virus": {
+          "precision": 0.14964610717896865,
+          "recall": 0.925,
+          "f1": 0.257615317667537,
+          "support": 160
+        },
+        "Trojan": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 160
+        },
+        "Backdoor": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 160
+        },
+        "Worms": {
+          "precision": 0.11494252873563218,
+          "recall": 0.0625,
+          "f1": 0.08097165991902834,
+          "support": 160
+        },
+        "Dropper": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 143
+        },
+        "Spyware": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 133
+        },
+        "Adware": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 61
+        }
+      },
+      "macro_avg": {
+        "precision": 0.06586046473522675,
+        "recall": 0.13593750000000002,
+        "f1": 0.060422919709632886
+      },
+      "weighted_avg": {
+        "precision": 0.07414370700183838,
+        "recall": 0.15303430079155672,
+        "f1": 0.06802228428173271
+      },
+      "balanced_accuracy": 0.13593750000000002,
+      "confusion_matrix": [
+        [
+          16,
+          137,
+          0,
+          0,
+          7,
+          0,
+          0,
+          0
+        ],
+        [
+          6,
+          148,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0
+        ],
+        [
+          11,
+          127,
+          0,
+          0,
+          22,
+          0,
+          0,
+          0
+        ],
+        [
+          9,
+          131,
+          0,
+          0,
+          20,
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          145,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          132,
+          0,
+          0,
+          9,
+          0,
+          0,
+          0
+        ],
+        [
+          12,
+          108,
+          0,
+          0,
+          13,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          61,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "class_names": [
+        "Downloader",
+        "Virus",
+        "Trojan",
+        "Backdoor",
+        "Worms",
+        "Dropper",
+        "Spyware",
+        "Adware"
+      ]
+    },
+    "test": {
+      "per_class": {
+        "Downloader": {
+          "precision": 0.2465753424657534,
+          "recall": 0.09,
+          "f1": 0.13186813186813187,
+          "support": 200
+        },
+        "Virus": {
+          "precision": 0.1501230516817063,
+          "recall": 0.915,
+          "f1": 0.25792811839323465,
+          "support": 200
+        },
+        "Trojan": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 200
+        },
+        "Backdoor": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 201
+        },
+        "Worms": {
+          "precision": 0.06153846153846154,
+          "recall": 0.04,
+          "f1": 0.048484848484848485,
+          "support": 200
+        },
+        "Dropper": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 178
+        },
+        "Spyware": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 167
+        },
+        "Adware": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 76
+        }
+      },
+      "macro_avg": {
+        "precision": 0.05727960696074016,
+        "recall": 0.13062500000000002,
+        "f1": 0.05478513734327688
+      },
+      "weighted_avg": {
+        "precision": 0.06444962808522099,
+        "recall": 0.1469760900140647,
+        "f1": 0.061642911216064
+      },
+      "balanced_accuracy": 0.13062500000000002,
+      "confusion_matrix": [
+        [
+          18,
+          169,
+          0,
+          0,
+          13,
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          183,
+          0,
+          0,
+          12,
+          0,
+          0,
+          0
+        ],
+        [
+          7,
+          171,
+          0,
+          0,
+          22,
+          0,
+          0,
+          0
+        ],
+        [
+          14,
+          160,
+          0,
+          0,
+          27,
+          0,
+          0,
+          0
+        ],
+        [
+          10,
+          182,
+          0,
+          0,
+          8,
+          0,
+          0,
+          0
+        ],
+        [
+          8,
+          148,
+          0,
+          0,
+          22,
+          0,
+          0,
+          0
+        ],
+        [
+          8,
+          137,
+          0,
+          0,
+          22,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          69,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0
+        ]
+      ],
+      "class_names": [
+        "Downloader",
+        "Virus",
+        "Trojan",
+        "Backdoor",
+        "Worms",
+        "Dropper",
+        "Spyware",
+        "Adware"
+      ]
+    }
+  }
+}

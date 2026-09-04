@@ -1,0 +1,3 @@
+name: canine
+pretrained_name: google/canine-c
+max_length: 512

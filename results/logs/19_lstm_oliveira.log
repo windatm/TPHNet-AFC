@@ -1,0 +1,57 @@
+17:55:16 | INFO    | malware_clf.utils.experiment | Experiment config saved to results/lstm_oliveira_oliveira_lstm_20260616_105516/experiment.yaml
+17:55:16 | INFO    | malware_clf.utils.experiment | Starting experiment:
+Run ID:     lstm_oliveira_oliveira_lstm_20260616_105516
+Output dir: results/lstm_oliveira_oliveira_lstm_20260616_105516
+Model:      lstm_oliveira (lstm)
+Dataset:    oliveira (oliveira)
+Train cfg:  lstm
+Training:   epochs=20 batch=128 lr=0.001 fp16=False
+Splits:     train=25961 val=6491 test=8114 classes=9
+17:55:19 | INFO    | malware_clf.models.lstm | LSTM epoch 1/20 loss=174.5299
+17:55:20 | INFO    | malware_clf.models.lstm | LSTM epoch 2/20 loss=141.3787
+17:55:21 | INFO    | malware_clf.models.lstm | LSTM epoch 3/20 loss=131.7424
+17:55:23 | INFO    | malware_clf.models.lstm | LSTM epoch 4/20 loss=125.9820
+17:55:24 | INFO    | malware_clf.models.lstm | LSTM epoch 5/20 loss=121.3306
+17:55:26 | INFO    | malware_clf.models.lstm | LSTM epoch 6/20 loss=116.9208
+17:55:27 | INFO    | malware_clf.models.lstm | LSTM epoch 7/20 loss=113.6005
+17:55:28 | INFO    | malware_clf.models.lstm | LSTM epoch 8/20 loss=111.4898
+17:55:30 | INFO    | malware_clf.models.lstm | LSTM epoch 9/20 loss=108.3081
+17:55:31 | INFO    | malware_clf.models.lstm | LSTM epoch 10/20 loss=106.2605
+17:55:33 | INFO    | malware_clf.models.lstm | LSTM epoch 11/20 loss=104.0376
+17:55:34 | INFO    | malware_clf.models.lstm | LSTM epoch 12/20 loss=102.3341
+17:55:35 | INFO    | malware_clf.models.lstm | LSTM epoch 13/20 loss=100.6870
+17:55:37 | INFO    | malware_clf.models.lstm | LSTM epoch 14/20 loss=100.0386
+17:55:38 | INFO    | malware_clf.models.lstm | LSTM epoch 15/20 loss=98.3599
+17:55:39 | INFO    | malware_clf.models.lstm | LSTM epoch 16/20 loss=97.6406
+17:55:41 | INFO    | malware_clf.models.lstm | LSTM epoch 17/20 loss=96.0451
+17:55:42 | INFO    | malware_clf.models.lstm | LSTM epoch 18/20 loss=94.5792
+17:55:44 | INFO    | malware_clf.models.lstm | LSTM epoch 19/20 loss=94.4428
+17:55:45 | INFO    | malware_clf.models.lstm | LSTM epoch 20/20 loss=93.8110
+17:55:46 | INFO    | malware_clf.runner | LSTM checkpoint saved to results/lstm_oliveira_oliveira_lstm_20260616_105516/lstm.pt
+17:55:46 | INFO    | malware_clf.utils.experiment | Metrics saved to results/lstm_oliveira_oliveira_lstm_20260616_105516/metrics.json
+Run ID:     lstm_oliveira_oliveira_lstm_20260616_105516
+Output dir: results/lstm_oliveira_oliveira_lstm_20260616_105516
+Model:      lstm_oliveira (lstm)
+Dataset:    oliveira (oliveira)
+Train cfg:  lstm
+Training:   epochs=20 batch=128 lr=0.001 fp16=False
+Splits:     train=25961 val=6491 test=8114 classes=9
+{
+  "run_dir": "results/lstm_oliveira_oliveira_lstm_20260616_105516",
+  "val": {
+    "precision": 0.6105083972473342,
+    "recall": 0.5255297512592291,
+    "acc": 0.8622708365429056,
+    "mcc": 0.6193886309949914,
+    "f1": 0.5573152089536163,
+    "auc": 0.8796923405407565
+  },
+  "test": {
+    "precision": 0.5928839606918821,
+    "recall": 0.4976400702207169,
+    "acc": 0.8623367019965492,
+    "mcc": 0.6170754538057223,
+    "f1": 0.5331694446288193,
+    "auc": 0.8660663070833271
+  }
+}

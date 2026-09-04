@@ -1,0 +1,60 @@
+17:28:13 | INFO    | malware_clf.utils.experiment | Experiment config saved to results/epaht_virusshare_epaht_afc_20260622_102813/experiment.yaml
+17:28:13 | INFO    | malware_clf.utils.experiment | Starting experiment:
+Run ID:     epaht_virusshare_epaht_afc_20260622_102813
+Output dir: results/epaht_virusshare_epaht_afc_20260622_102813
+Model:      epaht (epaht)
+Dataset:    virusshare (virusshare)
+Train cfg:  epaht_afc
+Training:   epochs=20 batch=64 lr=0.001 fp16=False
+Splits:     train=8863 val=2216 test=2770 classes=8
+17:28:13 | INFO    | malware_clf.models.epaht | EPAHT: building vocabulary from 8863 training samples.
+17:28:13 | INFO    | malware_clf.models.epaht | EPAHT: lazy chunk encoding (chunk_size=128, max_chunks=64).
+17:28:13 | INFO    | malware_clf.models.epaht | EPAHT: AFC-Loss enabled (alpha=0.100, tau_base=0.070).
+17:28:18 | INFO    | malware_clf.models.epaht | EPAHT epoch 1/20 loss=246.5686
+17:28:22 | INFO    | malware_clf.models.epaht | EPAHT epoch 2/20 loss=161.4170
+17:28:26 | INFO    | malware_clf.models.epaht | EPAHT epoch 3/20 loss=141.0366
+17:28:30 | INFO    | malware_clf.models.epaht | EPAHT epoch 4/20 loss=132.9542
+17:28:34 | INFO    | malware_clf.models.epaht | EPAHT epoch 5/20 loss=127.1646
+17:28:38 | INFO    | malware_clf.models.epaht | EPAHT epoch 6/20 loss=123.1576
+17:28:42 | INFO    | malware_clf.models.epaht | EPAHT epoch 7/20 loss=116.6891
+17:28:46 | INFO    | malware_clf.models.epaht | EPAHT epoch 8/20 loss=112.5199
+17:28:50 | INFO    | malware_clf.models.epaht | EPAHT epoch 9/20 loss=109.5493
+17:28:54 | INFO    | malware_clf.models.epaht | EPAHT epoch 10/20 loss=105.2418
+17:28:58 | INFO    | malware_clf.models.epaht | EPAHT epoch 11/20 loss=103.5950
+17:29:02 | INFO    | malware_clf.models.epaht | EPAHT epoch 12/20 loss=101.3403
+17:29:06 | INFO    | malware_clf.models.epaht | EPAHT epoch 13/20 loss=98.8161
+17:29:10 | INFO    | malware_clf.models.epaht | EPAHT epoch 14/20 loss=96.5109
+17:29:14 | INFO    | malware_clf.models.epaht | EPAHT epoch 15/20 loss=95.0096
+17:29:18 | INFO    | malware_clf.models.epaht | EPAHT epoch 16/20 loss=95.3440
+17:29:22 | INFO    | malware_clf.models.epaht | EPAHT epoch 17/20 loss=93.0208
+17:29:26 | INFO    | malware_clf.models.epaht | EPAHT epoch 18/20 loss=91.7001
+17:29:30 | INFO    | malware_clf.models.epaht | EPAHT epoch 19/20 loss=90.8276
+17:29:34 | INFO    | malware_clf.models.epaht | EPAHT epoch 20/20 loss=89.7106
+17:29:35 | INFO    | malware_clf.runner | EPAHT checkpoint saved to results/epaht_virusshare_epaht_afc_20260622_102813/epaht.pt
+17:29:35 | INFO    | malware_clf.utils.experiment | Metrics saved to results/epaht_virusshare_epaht_afc_20260622_102813/metrics.json
+Run ID:     epaht_virusshare_epaht_afc_20260622_102813
+Output dir: results/epaht_virusshare_epaht_afc_20260622_102813
+Model:      epaht (epaht)
+Dataset:    virusshare (virusshare)
+Train cfg:  epaht_afc
+Training:   epochs=20 batch=64 lr=0.001 fp16=False
+Splits:     train=8863 val=2216 test=2770 classes=8
+{
+  "run_dir": "results/epaht_virusshare_epaht_afc_20260622_102813",
+  "val": {
+    "precision": 0.7109138209817558,
+    "recall": 0.7293077108606112,
+    "acc": 0.8601083032490975,
+    "mcc": 0.7466230638081999,
+    "f1": 0.7133573210561995,
+    "auc": 0.9419977993103247
+  },
+  "test": {
+    "precision": 0.7495271384455552,
+    "recall": 0.7491664278665073,
+    "acc": 0.8776173285198556,
+    "mcc": 0.7755266260044872,
+    "f1": 0.7378591384930684,
+    "auc": 0.9459178246745229
+  }
+}

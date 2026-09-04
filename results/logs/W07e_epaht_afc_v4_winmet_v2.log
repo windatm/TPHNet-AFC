@@ -1,0 +1,102 @@
+/home/wind/anaconda3/envs/malware-clf/lib/python3.11/site-packages/torch/cuda/__init__.py:129: UserWarning: CUDA initialization: Unexpected error from cudaGetDeviceCount(). Did you run some cuda functions before calling NumCudaDevices() that might have already set an error? Error 304: OS call failed or operation not supported on this OS (Triggered internally at /opt/conda/conda-bld/pytorch_1729647429097/work/c10/cuda/CUDAFunctions.cpp:108.)
+  return torch._C._cuda_getDeviceCount() > 0
+12:11:24 | INFO    | malware_clf.utils.experiment | Experiment config saved to results/epaht_winmet_v2_winmet_epaht_winmet_afc_v4_20260629_051124/experiment.yaml
+12:11:24 | INFO    | malware_clf.utils.experiment | Starting experiment:
+Run ID:     epaht_winmet_v2_winmet_epaht_winmet_afc_v4_20260629_051124
+Output dir: results/epaht_winmet_v2_winmet_epaht_winmet_afc_v4_20260629_051124
+Model:      epaht_winmet_v2 (epaht)
+Dataset:    winmet (winmet)
+Train cfg:  epaht_winmet_afc_v4
+Training:   epochs=60 batch=128 lr=0.001 fp16=False
+Splits:     train=1833 val=459 test=573 classes=10
+12:11:24 | INFO    | malware_clf.models.epaht | EPAHT: building vocabulary from 1833 training samples.
+12:11:27 | INFO    | malware_clf.models.epaht | EPAHT: lazy chunk encoding (chunk_size=64, max_chunks=64).
+12:11:27 | INFO    | malware_clf.models.epaht | EPAHT: AFC-Loss enabled (alpha=0.050, tau_base=0.070).
+12:13:01 | INFO    | malware_clf.models.epaht | EPAHT epoch 1/60 train_loss=2.0651 val_mcc=0.3595
+12:14:31 | INFO    | malware_clf.models.epaht | EPAHT epoch 2/60 train_loss=1.6848 val_mcc=0.3184
+12:16:00 | INFO    | malware_clf.models.epaht | EPAHT epoch 3/60 train_loss=1.4874 val_mcc=0.3947
+12:17:31 | INFO    | malware_clf.models.epaht | EPAHT epoch 4/60 train_loss=1.3100 val_mcc=0.4606
+12:19:03 | INFO    | malware_clf.models.epaht | EPAHT epoch 5/60 train_loss=1.1709 val_mcc=0.5052
+12:20:35 | INFO    | malware_clf.models.epaht | EPAHT epoch 6/60 train_loss=1.2798 val_mcc=0.5700
+12:22:06 | INFO    | malware_clf.models.epaht | EPAHT epoch 7/60 train_loss=1.1944 val_mcc=0.6426
+12:23:38 | INFO    | malware_clf.models.epaht | EPAHT epoch 8/60 train_loss=1.1320 val_mcc=0.5809
+12:25:08 | INFO    | malware_clf.models.epaht | EPAHT epoch 9/60 train_loss=1.0750 val_mcc=0.6390
+12:26:40 | INFO    | malware_clf.models.epaht | EPAHT epoch 10/60 train_loss=1.0324 val_mcc=0.6503
+12:28:12 | INFO    | malware_clf.models.epaht | EPAHT epoch 11/60 train_loss=1.0367 val_mcc=0.6166
+12:29:42 | INFO    | malware_clf.models.epaht | EPAHT epoch 12/60 train_loss=0.9910 val_mcc=0.6431
+12:31:15 | INFO    | malware_clf.models.epaht | EPAHT epoch 13/60 train_loss=0.9681 val_mcc=0.6880
+12:32:46 | INFO    | malware_clf.models.epaht | EPAHT epoch 14/60 train_loss=0.9143 val_mcc=0.6817
+12:34:16 | INFO    | malware_clf.models.epaht | EPAHT epoch 15/60 train_loss=0.9038 val_mcc=0.6834
+12:35:47 | INFO    | malware_clf.models.epaht | EPAHT epoch 16/60 train_loss=0.9209 val_mcc=0.6882
+12:37:18 | INFO    | malware_clf.models.epaht | EPAHT epoch 17/60 train_loss=0.8937 val_mcc=0.6624
+12:38:50 | INFO    | malware_clf.models.epaht | EPAHT epoch 18/60 train_loss=0.8601 val_mcc=0.6927
+12:40:22 | INFO    | malware_clf.models.epaht | EPAHT epoch 19/60 train_loss=0.8688 val_mcc=0.6802
+12:41:53 | INFO    | malware_clf.models.epaht | EPAHT epoch 20/60 train_loss=0.8715 val_mcc=0.6879
+12:43:25 | INFO    | malware_clf.models.epaht | EPAHT epoch 21/60 train_loss=0.8354 val_mcc=0.6678
+12:44:57 | INFO    | malware_clf.models.epaht | EPAHT epoch 22/60 train_loss=0.8163 val_mcc=0.6613
+12:46:30 | INFO    | malware_clf.models.epaht | EPAHT epoch 23/60 train_loss=0.8232 val_mcc=0.6756
+12:48:01 | INFO    | malware_clf.models.epaht | EPAHT epoch 24/60 train_loss=0.7845 val_mcc=0.6905
+12:49:32 | INFO    | malware_clf.models.epaht | EPAHT epoch 25/60 train_loss=0.7932 val_mcc=0.6955
+12:51:03 | INFO    | malware_clf.models.epaht | EPAHT epoch 26/60 train_loss=0.7629 val_mcc=0.7036
+12:52:35 | INFO    | malware_clf.models.epaht | EPAHT epoch 27/60 train_loss=0.7898 val_mcc=0.6980
+12:54:07 | INFO    | malware_clf.models.epaht | EPAHT epoch 28/60 train_loss=0.7628 val_mcc=0.6684
+12:55:39 | INFO    | malware_clf.models.epaht | EPAHT epoch 29/60 train_loss=0.7321 val_mcc=0.6930
+12:57:11 | INFO    | malware_clf.models.epaht | EPAHT epoch 30/60 train_loss=0.7340 val_mcc=0.6910
+12:58:42 | INFO    | malware_clf.models.epaht | EPAHT epoch 31/60 train_loss=0.7517 val_mcc=0.6855
+13:00:13 | INFO    | malware_clf.models.epaht | EPAHT epoch 32/60 train_loss=0.7391 val_mcc=0.7103
+13:01:45 | INFO    | malware_clf.models.epaht | EPAHT epoch 33/60 train_loss=0.7195 val_mcc=0.6976
+13:03:17 | INFO    | malware_clf.models.epaht | EPAHT epoch 34/60 train_loss=0.7152 val_mcc=0.6798
+13:04:50 | INFO    | malware_clf.models.epaht | EPAHT epoch 35/60 train_loss=0.7239 val_mcc=0.7082
+13:06:21 | INFO    | malware_clf.models.epaht | EPAHT epoch 36/60 train_loss=0.6817 val_mcc=0.6913
+13:07:51 | INFO    | malware_clf.models.epaht | EPAHT epoch 37/60 train_loss=0.6909 val_mcc=0.7032
+13:09:23 | INFO    | malware_clf.models.epaht | EPAHT epoch 38/60 train_loss=0.6656 val_mcc=0.7076
+13:10:54 | INFO    | malware_clf.models.epaht | EPAHT epoch 39/60 train_loss=0.6571 val_mcc=0.6919
+13:12:26 | INFO    | malware_clf.models.epaht | EPAHT epoch 40/60 train_loss=0.6581 val_mcc=0.7003
+13:13:57 | INFO    | malware_clf.models.epaht | EPAHT epoch 41/60 train_loss=0.6358 val_mcc=0.6732
+13:15:29 | INFO    | malware_clf.models.epaht | EPAHT epoch 42/60 train_loss=0.6654 val_mcc=0.7063
+13:17:00 | INFO    | malware_clf.models.epaht | EPAHT epoch 43/60 train_loss=0.6363 val_mcc=0.6939
+13:18:30 | INFO    | malware_clf.models.epaht | EPAHT epoch 44/60 train_loss=0.6091 val_mcc=0.6977
+13:20:03 | INFO    | malware_clf.models.epaht | EPAHT epoch 45/60 train_loss=0.6184 val_mcc=0.7039
+13:21:34 | INFO    | malware_clf.models.epaht | EPAHT epoch 46/60 train_loss=0.6095 val_mcc=0.6920
+13:23:05 | INFO    | malware_clf.models.epaht | EPAHT epoch 47/60 train_loss=0.6038 val_mcc=0.7015
+13:24:36 | INFO    | malware_clf.models.epaht | EPAHT epoch 48/60 train_loss=0.6039 val_mcc=0.7050
+13:26:07 | INFO    | malware_clf.models.epaht | EPAHT epoch 49/60 train_loss=0.5915 val_mcc=0.7032
+13:27:38 | INFO    | malware_clf.models.epaht | EPAHT epoch 50/60 train_loss=0.5772 val_mcc=0.7086
+13:29:09 | INFO    | malware_clf.models.epaht | EPAHT epoch 51/60 train_loss=0.5921 val_mcc=0.7105
+13:30:41 | INFO    | malware_clf.models.epaht | EPAHT epoch 52/60 train_loss=0.5670 val_mcc=0.7028
+13:32:11 | INFO    | malware_clf.models.epaht | EPAHT epoch 53/60 train_loss=0.5728 val_mcc=0.6743
+13:33:43 | INFO    | malware_clf.models.epaht | EPAHT epoch 54/60 train_loss=0.5736 val_mcc=0.6873
+13:35:15 | INFO    | malware_clf.models.epaht | EPAHT epoch 55/60 train_loss=0.5500 val_mcc=0.6878
+13:36:47 | INFO    | malware_clf.models.epaht | EPAHT epoch 56/60 train_loss=0.5646 val_mcc=0.7151
+13:38:19 | INFO    | malware_clf.models.epaht | EPAHT epoch 57/60 train_loss=0.5640 val_mcc=0.6946
+13:39:51 | INFO    | malware_clf.models.epaht | EPAHT epoch 58/60 train_loss=0.5429 val_mcc=0.7127
+13:41:23 | INFO    | malware_clf.models.epaht | EPAHT epoch 59/60 train_loss=0.5425 val_mcc=0.7020
+13:42:55 | INFO    | malware_clf.models.epaht | EPAHT epoch 60/60 train_loss=0.5246 val_mcc=0.7028
+13:43:03 | INFO    | malware_clf.runner | EPAHT checkpoint saved to results/epaht_winmet_v2_winmet_epaht_winmet_afc_v4_20260629_051124/epaht.pt
+13:43:03 | INFO    | malware_clf.utils.experiment | Metrics saved to results/epaht_winmet_v2_winmet_epaht_winmet_afc_v4_20260629_051124/metrics.json
+Run ID:     epaht_winmet_v2_winmet_epaht_winmet_afc_v4_20260629_051124
+Output dir: results/epaht_winmet_v2_winmet_epaht_winmet_afc_v4_20260629_051124
+Model:      epaht_winmet_v2 (epaht)
+Dataset:    winmet (winmet)
+Train cfg:  epaht_winmet_afc_v4
+Training:   epochs=60 batch=128 lr=0.001 fp16=False
+Splits:     train=1833 val=459 test=573 classes=10
+{
+  "run_dir": "results/epaht_winmet_v2_winmet_epaht_winmet_afc_v4_20260629_051124",
+  "val": {
+    "precision": 0.804762674256246,
+    "recall": 0.7194722803406892,
+    "acc": 0.7494553376906318,
+    "mcc": 0.715120001091742,
+    "f1": 0.7134815173422757,
+    "auc": 0.9683855275107924
+  },
+  "test": {
+    "precision": 0.7872230869872678,
+    "recall": 0.7513108723237869,
+    "acc": 0.7556719022687609,
+    "mcc": 0.7218531448922869,
+    "f1": 0.7399241399129994,
+    "auc": 0.9655993091392465
+  }
+}

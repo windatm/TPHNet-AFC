@@ -1,0 +1,5 @@
+# Truncate to the last 512 tokens.
+name: bert
+pretrained_name: bert-base-cased
+max_length: 512
+truncation_side: left

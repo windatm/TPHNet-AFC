@@ -1,0 +1,60 @@
+17:29:43 | INFO    | malware_clf.utils.experiment | Experiment config saved to results/epaht_catak_catak_epaht_catak_afc_20260622_102943/experiment.yaml
+17:29:43 | INFO    | malware_clf.utils.experiment | Starting experiment:
+Run ID:     epaht_catak_catak_epaht_catak_afc_20260622_102943
+Output dir: results/epaht_catak_catak_epaht_catak_afc_20260622_102943
+Model:      epaht_catak (epaht)
+Dataset:    catak (catak)
+Train cfg:  epaht_catak_afc
+Training:   epochs=20 batch=8 lr=0.001 fp16=False
+Splits:     train=4548 val=1137 test=1422 classes=8
+17:29:43 | INFO    | malware_clf.models.epaht | EPAHT: building vocabulary from 4548 training samples.
+17:29:44 | INFO    | malware_clf.models.epaht | EPAHT: lazy chunk encoding (chunk_size=128, max_chunks=32).
+17:29:44 | INFO    | malware_clf.models.epaht | EPAHT: AFC-Loss enabled (alpha=0.100, tau_base=0.070).
+17:29:58 | INFO    | malware_clf.models.epaht | EPAHT epoch 1/20 loss=1259.2036
+17:30:12 | INFO    | malware_clf.models.epaht | EPAHT epoch 2/20 loss=1217.0429
+17:30:26 | INFO    | malware_clf.models.epaht | EPAHT epoch 3/20 loss=1175.9535
+17:30:40 | INFO    | malware_clf.models.epaht | EPAHT epoch 4/20 loss=1129.1301
+17:30:54 | INFO    | malware_clf.models.epaht | EPAHT epoch 5/20 loss=1069.7988
+17:31:08 | INFO    | malware_clf.models.epaht | EPAHT epoch 6/20 loss=1008.3064
+17:31:22 | INFO    | malware_clf.models.epaht | EPAHT epoch 7/20 loss=939.2298
+17:31:36 | INFO    | malware_clf.models.epaht | EPAHT epoch 8/20 loss=863.5759
+17:31:50 | INFO    | malware_clf.models.epaht | EPAHT epoch 9/20 loss=794.9148
+17:32:04 | INFO    | malware_clf.models.epaht | EPAHT epoch 10/20 loss=721.9075
+17:32:18 | INFO    | malware_clf.models.epaht | EPAHT epoch 11/20 loss=656.6410
+17:32:32 | INFO    | malware_clf.models.epaht | EPAHT epoch 12/20 loss=587.5091
+17:32:46 | INFO    | malware_clf.models.epaht | EPAHT epoch 13/20 loss=525.3150
+17:33:00 | INFO    | malware_clf.models.epaht | EPAHT epoch 14/20 loss=471.3595
+17:33:14 | INFO    | malware_clf.models.epaht | EPAHT epoch 15/20 loss=404.4444
+17:33:28 | INFO    | malware_clf.models.epaht | EPAHT epoch 16/20 loss=362.2024
+17:33:42 | INFO    | malware_clf.models.epaht | EPAHT epoch 17/20 loss=327.3820
+17:33:56 | INFO    | malware_clf.models.epaht | EPAHT epoch 18/20 loss=291.2129
+17:34:10 | INFO    | malware_clf.models.epaht | EPAHT epoch 19/20 loss=274.5021
+17:34:25 | INFO    | malware_clf.models.epaht | EPAHT epoch 20/20 loss=248.6078
+17:34:29 | INFO    | malware_clf.runner | EPAHT checkpoint saved to results/epaht_catak_catak_epaht_catak_afc_20260622_102943/epaht.pt
+17:34:29 | INFO    | malware_clf.utils.experiment | Metrics saved to results/epaht_catak_catak_epaht_catak_afc_20260622_102943/metrics.json
+Run ID:     epaht_catak_catak_epaht_catak_afc_20260622_102943
+Output dir: results/epaht_catak_catak_epaht_catak_afc_20260622_102943
+Model:      epaht_catak (epaht)
+Dataset:    catak (catak)
+Train cfg:  epaht_catak_afc
+Training:   epochs=20 batch=8 lr=0.001 fp16=False
+Splits:     train=4548 val=1137 test=1422 classes=8
+{
+  "run_dir": "results/epaht_catak_catak_epaht_catak_afc_20260622_102943",
+  "val": {
+    "precision": 0.567316423421707,
+    "recall": 0.5567921253142888,
+    "acc": 0.5470536499560247,
+    "mcc": 0.47926003730051847,
+    "f1": 0.5589326793444097,
+    "auc": 0.8564371775803096
+  },
+  "test": {
+    "precision": 0.5909311433296496,
+    "recall": 0.5659468592273427,
+    "acc": 0.5590717299578059,
+    "mcc": 0.4924818541443719,
+    "f1": 0.5745300285485054,
+    "auc": 0.8596813088770662
+  }
+}

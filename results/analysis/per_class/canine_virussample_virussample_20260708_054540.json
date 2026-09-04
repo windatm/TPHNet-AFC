@@ -1,0 +1,242 @@
+{
+  "run_id": "canine_virussample_virussample_20260708_054540",
+  "run_dir": "/home/wind/phongtt/malware-detection/results/canine_virussample_virussample_20260708_054540",
+  "labels": {
+    "model": "canine",
+    "dataset": "virussample",
+    "train": "virussample",
+    "seed": 42,
+    "split_seed": 42
+  },
+  "dataset": "virussample",
+  "model": "canine",
+  "train": "virussample",
+  "test_headline": {
+    "precision": 0.794980559405201,
+    "recall": 0.8377887460122239,
+    "acc": 0.9337442218798151,
+    "mcc": 0.8765003174750724,
+    "f1": 0.8013716453504433,
+    "auc": 0.980456513479201
+  },
+  "per_class": {
+    "val": {
+      "per_class": {
+        "Trojan": {
+          "precision": 0.9592050209205021,
+          "recall": 0.931910569105691,
+          "f1": 0.945360824742268,
+          "support": 984
+        },
+        "Virus": {
+          "precision": 0.9814323607427056,
+          "recall": 0.9762532981530343,
+          "f1": 0.9788359788359788,
+          "support": 379
+        },
+        "Backdoor": {
+          "precision": 1.0,
+          "recall": 0.9295774647887324,
+          "f1": 0.9635036496350365,
+          "support": 71
+        },
+        "Worms": {
+          "precision": 0.7468354430379747,
+          "recall": 0.8309859154929577,
+          "f1": 0.7866666666666666,
+          "support": 71
+        },
+        "Adware": {
+          "precision": 0.7,
+          "recall": 0.5833333333333334,
+          "f1": 0.6363636363636364,
+          "support": 36
+        },
+        "Agent": {
+          "precision": 0.22448979591836735,
+          "recall": 0.6875,
+          "f1": 0.3384615384615385,
+          "support": 16
+        }
+      },
+      "macro_avg": {
+        "precision": 0.7686604367699248,
+        "recall": 0.8232600968122914,
+        "f1": 0.7748653824508541
+      },
+      "weighted_avg": {
+        "precision": 0.9432483998058122,
+        "recall": 0.9274245343609505,
+        "f1": 0.9337189823424047
+      },
+      "balanced_accuracy": 0.8232600968122914,
+      "confusion_matrix": [
+        [
+          917,
+          4,
+          0,
+          18,
+          7,
+          38
+        ],
+        [
+          7,
+          370,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          5,
+          0,
+          66,
+          0,
+          0,
+          0
+        ],
+        [
+          10,
+          2,
+          0,
+          59,
+          0,
+          0
+        ],
+        [
+          13,
+          1,
+          0,
+          1,
+          21,
+          0
+        ],
+        [
+          4,
+          0,
+          0,
+          0,
+          1,
+          11
+        ]
+      ],
+      "class_names": [
+        "Trojan",
+        "Virus",
+        "Backdoor",
+        "Worms",
+        "Adware",
+        "Agent"
+      ]
+    },
+    "test": {
+      "per_class": {
+        "Trojan": {
+          "precision": 0.9485116653258246,
+          "recall": 0.9577579203899269,
+          "f1": 0.9531123686337915,
+          "support": 1231
+        },
+        "Virus": {
+          "precision": 0.9911699779249448,
+          "recall": 0.9472573839662447,
+          "f1": 0.9687162891046386,
+          "support": 474
+        },
+        "Backdoor": {
+          "precision": 1.0,
+          "recall": 0.8444444444444444,
+          "f1": 0.9156626506024096,
+          "support": 90
+        },
+        "Worms": {
+          "precision": 0.7857142857142857,
+          "recall": 0.75,
+          "f1": 0.7674418604651163,
+          "support": 88
+        },
+        "Adware": {
+          "precision": 0.6808510638297872,
+          "recall": 0.7272727272727273,
+          "f1": 0.7032967032967034,
+          "support": 44
+        },
+        "Agent": {
+          "precision": 0.36363636363636365,
+          "recall": 0.8,
+          "f1": 0.5,
+          "support": 20
+        }
+      },
+      "macro_avg": {
+        "precision": 0.794980559405201,
+        "recall": 0.8377887460122239,
+        "f1": 0.8013716453504433
+      },
+      "weighted_avg": {
+        "precision": 0.9418620753860344,
+        "recall": 0.9337442218798151,
+        "f1": 0.9364881479424746
+      },
+      "balanced_accuracy": 0.8377887460122239,
+      "confusion_matrix": [
+        [
+          1179,
+          2,
+          0,
+          15,
+          7,
+          28
+        ],
+        [
+          16,
+          449,
+          0,
+          2,
+          7,
+          0
+        ],
+        [
+          12,
+          1,
+          76,
+          1,
+          0,
+          0
+        ],
+        [
+          20,
+          1,
+          0,
+          66,
+          1,
+          0
+        ],
+        [
+          12,
+          0,
+          0,
+          0,
+          32,
+          0
+        ],
+        [
+          4,
+          0,
+          0,
+          0,
+          0,
+          16
+        ]
+      ],
+      "class_names": [
+        "Trojan",
+        "Virus",
+        "Backdoor",
+        "Worms",
+        "Adware",
+        "Agent"
+      ]
+    }
+  }
+}

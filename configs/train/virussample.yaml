@@ -1,0 +1,14 @@
+output_dir: ./results
+epochs: 10
+batch_size: 16
+gradient_accumulation_steps: 1
+learning_rate: 5.0e-5
+weight_decay: 0.01
+warmup_steps: 500
+lr_scheduler_type: cosine
+seed: 75
+use_class_weights: true
+fp16: true
+dataloader_num_workers: 6
+metric_for_best_model: eval_auc
+save_total_limit: 1

@@ -1,0 +1,98 @@
+{
+  "run_id": "epaht_virusshare_epaht_20260722_160324",
+  "run_dir": "/home/wind/phongtt/malware-detection/results/epaht_virusshare_epaht_20260722_160324",
+  "created_at": "2026-07-22T16:03:24.769312+00:00",
+  "labels": {
+    "model": "epaht",
+    "dataset": "virusshare",
+    "train": "epaht",
+    "seed": 456,
+    "split_seed": 456
+  },
+  "config_files": {
+    "dataset": "configs/dataset/virusshare.yaml",
+    "model": "configs/model/epaht.yaml",
+    "train": "configs/train/epaht.yaml"
+  },
+  "dataset": {
+    "name": "virusshare",
+    "kind": "csv",
+    "path": "datasets/datasets/VirusShare.csv",
+    "text_column": "api",
+    "label_column": "class",
+    "label_order": [
+      "Trojan",
+      "Virus",
+      "Adware",
+      "Worms",
+      "Backdoor",
+      "Downloader",
+      "Agent",
+      "Ransomware"
+    ],
+    "test_size": 0.2,
+    "val_size": 0.2,
+    "random_state": 456,
+    "split_strategy": "random",
+    "preprocess": null
+  },
+  "model": {
+    "name": "epaht",
+    "pretrained_name": null,
+    "max_length": 512,
+    "n_estimators": 5,
+    "embed_dim": 16,
+    "hidden_dim": 128,
+    "max_words": 800,
+    "lstm_max_len": 500,
+    "dropout": 0.2,
+    "chunk_size": 128,
+    "max_chunks": 64,
+    "num_phases": 4,
+    "recency_bias_init": 1.0,
+    "transformer_layers": 4,
+    "transformer_heads": null,
+    "gnn_layers": 2,
+    "truncation_side": "right"
+  },
+  "train": {
+    "output_dir": "/home/wind/phongtt/malware-detection/results/epaht_virusshare_epaht_20260722_160324",
+    "epochs": 20,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0,
+    "warmup_steps": 0,
+    "lr_scheduler_type": "constant",
+    "seed": 456,
+    "use_class_weights": true,
+    "fp16": false,
+    "dataloader_num_workers": 4,
+    "gradient_accumulation_steps": 1,
+    "metric_for_best_model": "eval_auc",
+    "save_total_limit": 1,
+    "cleanup_checkpoints": true,
+    "use_afc_loss": false,
+    "afc_alpha": 0.1,
+    "afc_tau_base": 0.07,
+    "afc_adaptive": true,
+    "afc_warmup_epochs": 0,
+    "collect_training_history": true,
+    "collect_per_class": true,
+    "benchmark_inference": true,
+    "inference_warmup_batches": 1,
+    "logging_steps": 100
+  },
+  "splits": {
+    "train": 8863,
+    "val": 2216,
+    "test": 2770
+  },
+  "num_classes": 8,
+  "finished_at": "2026-07-22T16:04:52.283682+00:00",
+  "total_wall_s": 87.9526,
+  "test_headline": {
+    "auc": 0.955960615938305,
+    "f1": 0.7195812393726388,
+    "mcc": 0.7635397047238038
+  }
+}

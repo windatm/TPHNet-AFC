@@ -1,0 +1,103 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+# Conda envs are created outside the repo by default (conda env create -f environment.yml)
+
+# Tooling caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Editor / OS
+.DS_Store
+__MACOSX/
+
+# Local datasets (download or build; see README)
+datasets/
+
+# Built parquet caches (data/avast.parquet)
+/data/
+
+# AVAST / malware dumps if copied into the repo
+malware-data/
+**/AVAST_extracted/
+**/public_full_reports/
+
+# Tabular and columnar caches
+*.parquet
+*.feather
+*.arrow
+*.orc
+
+# Archives and compressed payloads
+*.zip
+*.7z
+*.7z.*
+*.tar
+*.tar.*
+*.tgz
+*.gz
+*.bz2
+*.xz
+*.rar
+
+# Serialized tables / arrays (when saved outside datasets/ or data/)
+*.csv
+*.tsv
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.npy
+*.npz
+
+# Sandbox / AVAST JSON reports (very large)
+*_api_calls.json
+
+# Training outputs: keep results/ metrics and logs; skip HF weight dirs
+results/**/checkpoint-*/
+
+best_models/
+checkpoints/
+/logs/
+wandb/
+runs/
+tensorboard/
+
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+*.onnx
+
+# Hugging Face / transformer caches if stored in-repo
+hf_cache/
+transformers_cache/

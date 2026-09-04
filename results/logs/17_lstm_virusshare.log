@@ -1,0 +1,57 @@
+12:11:24 | INFO    | malware_clf.utils.experiment | Experiment config saved to results/lstm_virusshare_lstm_20260619_051124/experiment.yaml
+12:11:24 | INFO    | malware_clf.utils.experiment | Starting experiment:
+Run ID:     lstm_virusshare_lstm_20260619_051124
+Output dir: results/lstm_virusshare_lstm_20260619_051124
+Model:      lstm (lstm)
+Dataset:    virusshare (virusshare)
+Train cfg:  lstm
+Training:   epochs=20 batch=128 lr=0.001 fp16=False
+Splits:     train=8863 val=2216 test=2770 classes=8
+12:11:27 | INFO    | malware_clf.models.lstm | LSTM epoch 1/20 loss=79.9698
+12:11:28 | INFO    | malware_clf.models.lstm | LSTM epoch 2/20 loss=46.8023
+12:11:30 | INFO    | malware_clf.models.lstm | LSTM epoch 3/20 loss=39.5573
+12:11:32 | INFO    | malware_clf.models.lstm | LSTM epoch 4/20 loss=34.6011
+12:11:33 | INFO    | malware_clf.models.lstm | LSTM epoch 5/20 loss=31.5859
+12:11:35 | INFO    | malware_clf.models.lstm | LSTM epoch 6/20 loss=29.7540
+12:11:37 | INFO    | malware_clf.models.lstm | LSTM epoch 7/20 loss=27.1569
+12:11:38 | INFO    | malware_clf.models.lstm | LSTM epoch 8/20 loss=26.2045
+12:11:40 | INFO    | malware_clf.models.lstm | LSTM epoch 9/20 loss=25.7855
+12:11:42 | INFO    | malware_clf.models.lstm | LSTM epoch 10/20 loss=24.4008
+12:11:44 | INFO    | malware_clf.models.lstm | LSTM epoch 11/20 loss=23.3386
+12:11:45 | INFO    | malware_clf.models.lstm | LSTM epoch 12/20 loss=23.6595
+12:11:47 | INFO    | malware_clf.models.lstm | LSTM epoch 13/20 loss=22.3565
+12:11:49 | INFO    | malware_clf.models.lstm | LSTM epoch 14/20 loss=22.9766
+12:11:50 | INFO    | malware_clf.models.lstm | LSTM epoch 15/20 loss=21.2573
+12:11:52 | INFO    | malware_clf.models.lstm | LSTM epoch 16/20 loss=21.1930
+12:11:54 | INFO    | malware_clf.models.lstm | LSTM epoch 17/20 loss=21.0468
+12:11:55 | INFO    | malware_clf.models.lstm | LSTM epoch 18/20 loss=20.7882
+12:11:57 | INFO    | malware_clf.models.lstm | LSTM epoch 19/20 loss=20.5302
+12:11:59 | INFO    | malware_clf.models.lstm | LSTM epoch 20/20 loss=20.6085
+12:11:59 | INFO    | malware_clf.runner | LSTM checkpoint saved to results/lstm_virusshare_lstm_20260619_051124/lstm.pt
+12:11:59 | INFO    | malware_clf.utils.experiment | Metrics saved to results/lstm_virusshare_lstm_20260619_051124/metrics.json
+Run ID:     lstm_virusshare_lstm_20260619_051124
+Output dir: results/lstm_virusshare_lstm_20260619_051124
+Model:      lstm (lstm)
+Dataset:    virusshare (virusshare)
+Train cfg:  lstm
+Training:   epochs=20 batch=128 lr=0.001 fp16=False
+Splits:     train=8863 val=2216 test=2770 classes=8
+{
+  "run_dir": "results/lstm_virusshare_lstm_20260619_051124",
+  "val": {
+    "precision": 0.7126229838032065,
+    "recall": 0.6812115603826745,
+    "acc": 0.865072202166065,
+    "mcc": 0.7555295608905108,
+    "f1": 0.6921827356474322,
+    "auc": 0.9303268001500609
+  },
+  "test": {
+    "precision": 0.7951626602520825,
+    "recall": 0.6925094041037887,
+    "acc": 0.8747292418772563,
+    "mcc": 0.7716785738129017,
+    "f1": 0.7185207333869792,
+    "auc": 0.952800956018324
+  }
+}

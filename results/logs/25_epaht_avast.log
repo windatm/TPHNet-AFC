@@ -1,0 +1,59 @@
+15:59:33 | INFO    | malware_clf.utils.experiment | Experiment config saved to results/epaht_avast_epaht_avast_20260619_085933/experiment.yaml
+15:59:33 | INFO    | malware_clf.utils.experiment | Starting experiment:
+Run ID:     epaht_avast_epaht_avast_20260619_085933
+Output dir: results/epaht_avast_epaht_avast_20260619_085933
+Model:      epaht (epaht)
+Dataset:    avast (avast)
+Train cfg:  epaht_avast
+Training:   epochs=20 batch=32 lr=0.001 fp16=False
+Splits:     train=27424 val=6857 test=14693 classes=10
+15:59:33 | INFO    | malware_clf.models.epaht | EPAHT: building vocabulary from 27424 training samples.
+15:59:45 | INFO    | malware_clf.models.epaht | EPAHT: lazy chunk encoding (chunk_size=128, max_chunks=64).
+16:02:57 | INFO    | malware_clf.models.epaht | EPAHT epoch 1/20 loss=897.7251
+16:06:10 | INFO    | malware_clf.models.epaht | EPAHT epoch 2/20 loss=382.7300
+16:09:24 | INFO    | malware_clf.models.epaht | EPAHT epoch 3/20 loss=262.9128
+16:12:37 | INFO    | malware_clf.models.epaht | EPAHT epoch 4/20 loss=166.2550
+16:15:50 | INFO    | malware_clf.models.epaht | EPAHT epoch 5/20 loss=136.1929
+16:19:03 | INFO    | malware_clf.models.epaht | EPAHT epoch 6/20 loss=109.5758
+16:22:17 | INFO    | malware_clf.models.epaht | EPAHT epoch 7/20 loss=98.8328
+16:25:32 | INFO    | malware_clf.models.epaht | EPAHT epoch 8/20 loss=86.0113
+16:28:47 | INFO    | malware_clf.models.epaht | EPAHT epoch 9/20 loss=88.6427
+16:32:01 | INFO    | malware_clf.models.epaht | EPAHT epoch 10/20 loss=70.1381
+16:35:15 | INFO    | malware_clf.models.epaht | EPAHT epoch 11/20 loss=69.3471
+16:38:29 | INFO    | malware_clf.models.epaht | EPAHT epoch 12/20 loss=68.5346
+16:41:44 | INFO    | malware_clf.models.epaht | EPAHT epoch 13/20 loss=49.1661
+16:44:58 | INFO    | malware_clf.models.epaht | EPAHT epoch 14/20 loss=44.7604
+16:48:13 | INFO    | malware_clf.models.epaht | EPAHT epoch 15/20 loss=38.9484
+16:51:27 | INFO    | malware_clf.models.epaht | EPAHT epoch 16/20 loss=30.9664
+16:54:41 | INFO    | malware_clf.models.epaht | EPAHT epoch 17/20 loss=35.0629
+16:57:56 | INFO    | malware_clf.models.epaht | EPAHT epoch 18/20 loss=27.4618
+17:01:11 | INFO    | malware_clf.models.epaht | EPAHT epoch 19/20 loss=21.2799
+17:04:25 | INFO    | malware_clf.models.epaht | EPAHT epoch 20/20 loss=18.3711
+17:05:34 | INFO    | malware_clf.runner | EPAHT checkpoint saved to results/epaht_avast_epaht_avast_20260619_085933/epaht.pt
+17:05:34 | INFO    | malware_clf.utils.experiment | Metrics saved to results/epaht_avast_epaht_avast_20260619_085933/metrics.json
+Run ID:     epaht_avast_epaht_avast_20260619_085933
+Output dir: results/epaht_avast_epaht_avast_20260619_085933
+Model:      epaht (epaht)
+Dataset:    avast (avast)
+Train cfg:  epaht_avast
+Training:   epochs=20 batch=32 lr=0.001 fp16=False
+Splits:     train=27424 val=6857 test=14693 classes=10
+{
+  "run_dir": "results/epaht_avast_epaht_avast_20260619_085933",
+  "val": {
+    "precision": 0.9816718880058957,
+    "recall": 0.9784873005871425,
+    "acc": 0.9859997083272568,
+    "mcc": 0.9828010749158211,
+    "f1": 0.980015755141266,
+    "auc": 0.999547022713606
+  },
+  "test": {
+    "precision": 0.9781691665064056,
+    "recall": 0.9744240880911711,
+    "acc": 0.98400598924658,
+    "mcc": 0.9803356373978308,
+    "f1": 0.9761988917663604,
+    "auc": 0.9989613738426975
+  }
+}

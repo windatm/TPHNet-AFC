@@ -1,0 +1,16 @@
+name: virussample
+kind: csv
+path: datasets/datasets/VirusSample.csv
+text_column: api
+label_column: class
+label_order:
+  - Trojan
+  - Virus
+  - Backdoor
+  - Worms
+  - Adware
+  - Agent
+test_size: 0.2
+val_size: 0.2
+random_state: 75
+split_strategy: random

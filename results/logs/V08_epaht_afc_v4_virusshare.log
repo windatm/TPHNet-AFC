@@ -1,0 +1,100 @@
+21:52:00 | INFO    | malware_clf.utils.experiment | Experiment config saved to results_v1/epaht_virusshare_virusshare_epaht_virusshare_afc_v4_20260629_145200/experiment.yaml
+21:52:00 | INFO    | malware_clf.utils.experiment | Starting experiment:
+Run ID:     epaht_virusshare_virusshare_epaht_virusshare_afc_v4_20260629_145200
+Output dir: results_v1/epaht_virusshare_virusshare_epaht_virusshare_afc_v4_20260629_145200
+Model:      epaht_virusshare (epaht)
+Dataset:    virusshare (virusshare)
+Train cfg:  epaht_virusshare_afc_v4
+Training:   epochs=60 batch=32 lr=0.0005 fp16=False
+Splits:     train=8863 val=2216 test=2770 classes=8
+21:52:00 | INFO    | malware_clf.models.epaht | EPAHT: building vocabulary from 8863 training samples.
+21:52:00 | INFO    | malware_clf.models.epaht | EPAHT: lazy chunk encoding (chunk_size=32, max_chunks=16).
+21:52:00 | INFO    | malware_clf.models.epaht | EPAHT: AFC-Loss enabled (alpha=0.150, tau_base=0.070).
+21:52:05 | INFO    | malware_clf.models.epaht | EPAHT epoch 1/60 train_loss=1.2477 val_mcc=0.6240
+21:52:10 | INFO    | malware_clf.models.epaht | EPAHT epoch 2/60 train_loss=0.7281 val_mcc=0.7123
+21:52:14 | INFO    | malware_clf.models.epaht | EPAHT epoch 3/60 train_loss=0.6033 val_mcc=0.7092
+21:52:19 | INFO    | malware_clf.models.epaht | EPAHT epoch 4/60 train_loss=0.5440 val_mcc=0.7276
+21:52:24 | INFO    | malware_clf.models.epaht | EPAHT epoch 5/60 train_loss=0.5143 val_mcc=0.7081
+21:52:29 | INFO    | malware_clf.models.epaht | EPAHT epoch 6/60 train_loss=1.0611 val_mcc=0.7476
+21:52:34 | INFO    | malware_clf.models.epaht | EPAHT epoch 7/60 train_loss=0.9471 val_mcc=0.7489
+21:52:39 | INFO    | malware_clf.models.epaht | EPAHT epoch 8/60 train_loss=0.9101 val_mcc=0.7273
+21:52:44 | INFO    | malware_clf.models.epaht | EPAHT epoch 9/60 train_loss=0.8671 val_mcc=0.7498
+21:52:49 | INFO    | malware_clf.models.epaht | EPAHT epoch 10/60 train_loss=0.8446 val_mcc=0.7470
+21:52:54 | INFO    | malware_clf.models.epaht | EPAHT epoch 11/60 train_loss=0.8250 val_mcc=0.7447
+21:52:59 | INFO    | malware_clf.models.epaht | EPAHT epoch 12/60 train_loss=0.7981 val_mcc=0.7440
+21:53:04 | INFO    | malware_clf.models.epaht | EPAHT epoch 13/60 train_loss=0.7869 val_mcc=0.7489
+21:53:09 | INFO    | malware_clf.models.epaht | EPAHT epoch 14/60 train_loss=0.7785 val_mcc=0.7722
+21:53:14 | INFO    | malware_clf.models.epaht | EPAHT epoch 15/60 train_loss=0.7601 val_mcc=0.7729
+21:53:19 | INFO    | malware_clf.models.epaht | EPAHT epoch 16/60 train_loss=0.7535 val_mcc=0.7737
+21:53:24 | INFO    | malware_clf.models.epaht | EPAHT epoch 17/60 train_loss=0.7405 val_mcc=0.7885
+21:53:29 | INFO    | malware_clf.models.epaht | EPAHT epoch 18/60 train_loss=0.7366 val_mcc=0.7733
+21:53:34 | INFO    | malware_clf.models.epaht | EPAHT epoch 19/60 train_loss=0.7293 val_mcc=0.7479
+21:53:39 | INFO    | malware_clf.models.epaht | EPAHT epoch 20/60 train_loss=0.7262 val_mcc=0.7659
+21:53:44 | INFO    | malware_clf.models.epaht | EPAHT epoch 21/60 train_loss=0.7158 val_mcc=0.7605
+21:53:49 | INFO    | malware_clf.models.epaht | EPAHT epoch 22/60 train_loss=0.7100 val_mcc=0.7735
+21:53:54 | INFO    | malware_clf.models.epaht | EPAHT epoch 23/60 train_loss=0.7108 val_mcc=0.7588
+21:54:00 | INFO    | malware_clf.models.epaht | EPAHT epoch 24/60 train_loss=0.7080 val_mcc=0.7509
+21:54:05 | INFO    | malware_clf.models.epaht | EPAHT epoch 25/60 train_loss=0.7033 val_mcc=0.7614
+21:54:10 | INFO    | malware_clf.models.epaht | EPAHT epoch 26/60 train_loss=0.6978 val_mcc=0.7448
+21:54:15 | INFO    | malware_clf.models.epaht | EPAHT epoch 27/60 train_loss=0.6982 val_mcc=0.7742
+21:54:20 | INFO    | malware_clf.models.epaht | EPAHT epoch 28/60 train_loss=0.6988 val_mcc=0.7490
+21:54:25 | INFO    | malware_clf.models.epaht | EPAHT epoch 29/60 train_loss=0.6937 val_mcc=0.7603
+21:54:30 | INFO    | malware_clf.models.epaht | EPAHT epoch 30/60 train_loss=0.6896 val_mcc=0.7432
+21:54:35 | INFO    | malware_clf.models.epaht | EPAHT epoch 31/60 train_loss=0.6895 val_mcc=0.7763
+21:54:40 | INFO    | malware_clf.models.epaht | EPAHT epoch 32/60 train_loss=0.6852 val_mcc=0.7499
+21:54:45 | INFO    | malware_clf.models.epaht | EPAHT epoch 33/60 train_loss=0.6842 val_mcc=0.7814
+21:54:50 | INFO    | malware_clf.models.epaht | EPAHT epoch 34/60 train_loss=0.6826 val_mcc=0.7702
+21:54:55 | INFO    | malware_clf.models.epaht | EPAHT epoch 35/60 train_loss=0.6834 val_mcc=0.7695
+21:55:00 | INFO    | malware_clf.models.epaht | EPAHT epoch 36/60 train_loss=0.6766 val_mcc=0.7651
+21:55:05 | INFO    | malware_clf.models.epaht | EPAHT epoch 37/60 train_loss=0.6799 val_mcc=0.7802
+21:55:10 | INFO    | malware_clf.models.epaht | EPAHT epoch 38/60 train_loss=0.6771 val_mcc=0.7643
+21:55:15 | INFO    | malware_clf.models.epaht | EPAHT epoch 39/60 train_loss=0.6741 val_mcc=0.7709
+21:55:20 | INFO    | malware_clf.models.epaht | EPAHT epoch 40/60 train_loss=0.6734 val_mcc=0.7842
+21:55:25 | INFO    | malware_clf.models.epaht | EPAHT epoch 41/60 train_loss=0.6775 val_mcc=0.7756
+21:55:30 | INFO    | malware_clf.models.epaht | EPAHT epoch 42/60 train_loss=0.6683 val_mcc=0.7683
+21:55:35 | INFO    | malware_clf.models.epaht | EPAHT epoch 43/60 train_loss=0.6697 val_mcc=0.7854
+21:55:40 | INFO    | malware_clf.models.epaht | EPAHT epoch 44/60 train_loss=0.6731 val_mcc=0.7535
+21:55:45 | INFO    | malware_clf.models.epaht | EPAHT epoch 45/60 train_loss=0.6642 val_mcc=0.7675
+21:55:50 | INFO    | malware_clf.models.epaht | EPAHT epoch 46/60 train_loss=0.6656 val_mcc=0.7779
+21:55:55 | INFO    | malware_clf.models.epaht | EPAHT epoch 47/60 train_loss=0.6665 val_mcc=0.7723
+21:56:00 | INFO    | malware_clf.models.epaht | EPAHT epoch 48/60 train_loss=0.6645 val_mcc=0.7712
+21:56:05 | INFO    | malware_clf.models.epaht | EPAHT epoch 49/60 train_loss=0.6622 val_mcc=0.7694
+21:56:11 | INFO    | malware_clf.models.epaht | EPAHT epoch 50/60 train_loss=0.6691 val_mcc=0.7525
+21:56:16 | INFO    | malware_clf.models.epaht | EPAHT epoch 51/60 train_loss=0.6637 val_mcc=0.7643
+21:56:21 | INFO    | malware_clf.models.epaht | EPAHT epoch 52/60 train_loss=0.6627 val_mcc=0.7607
+21:56:26 | INFO    | malware_clf.models.epaht | EPAHT epoch 53/60 train_loss=0.6627 val_mcc=0.7623
+21:56:31 | INFO    | malware_clf.models.epaht | EPAHT epoch 54/60 train_loss=0.6608 val_mcc=0.7727
+21:56:36 | INFO    | malware_clf.models.epaht | EPAHT epoch 55/60 train_loss=0.6630 val_mcc=0.7632
+21:56:41 | INFO    | malware_clf.models.epaht | EPAHT epoch 56/60 train_loss=0.6612 val_mcc=0.7734
+21:56:46 | INFO    | malware_clf.models.epaht | EPAHT epoch 57/60 train_loss=0.6619 val_mcc=0.7734
+21:56:51 | INFO    | malware_clf.models.epaht | EPAHT epoch 58/60 train_loss=0.6584 val_mcc=0.7725
+21:56:56 | INFO    | malware_clf.models.epaht | EPAHT epoch 59/60 train_loss=0.6596 val_mcc=0.7725
+21:57:01 | INFO    | malware_clf.models.epaht | EPAHT epoch 60/60 train_loss=0.6584 val_mcc=0.7786
+21:57:02 | INFO    | malware_clf.runner | EPAHT checkpoint saved to results_v1/epaht_virusshare_virusshare_epaht_virusshare_afc_v4_20260629_145200/epaht.pt
+21:57:02 | INFO    | malware_clf.utils.experiment | Metrics saved to results_v1/epaht_virusshare_virusshare_epaht_virusshare_afc_v4_20260629_145200/metrics.json
+Run ID:     epaht_virusshare_virusshare_epaht_virusshare_afc_v4_20260629_145200
+Output dir: results_v1/epaht_virusshare_virusshare_epaht_virusshare_afc_v4_20260629_145200
+Model:      epaht_virusshare (epaht)
+Dataset:    virusshare (virusshare)
+Train cfg:  epaht_virusshare_afc_v4
+Training:   epochs=60 batch=32 lr=0.0005 fp16=False
+Splits:     train=8863 val=2216 test=2770 classes=8
+{
+  "run_dir": "results_v1/epaht_virusshare_virusshare_epaht_virusshare_afc_v4_20260629_145200",
+  "val": {
+    "precision": 0.7317908434587985,
+    "recall": 0.6809360927285755,
+    "acc": 0.8876353790613718,
+    "mcc": 0.7885331146279402,
+    "f1": 0.7028084354647883,
+    "auc": 0.939983628598994
+  },
+  "test": {
+    "precision": 0.8153244735313573,
+    "recall": 0.6725043535681436,
+    "acc": 0.8859205776173286,
+    "mcc": 0.7844919802941589,
+    "f1": 0.7085306308752793,
+    "auc": 0.9395996286676888
+  }
+}

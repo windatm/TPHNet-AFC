@@ -1,0 +1,83 @@
+run_id: rtf_rtx5000_oliveira_oliveira_rtf_20260721_031232
+run_dir: /home/wind/phongtt/malware-detection/results/rtf_rtx5000_oliveira_oliveira_rtf_20260721_031232
+created_at: '2026-07-21T03:12:32.006855+00:00'
+labels:
+  model: rtf_rtx5000
+  dataset: oliveira
+  train: oliveira_rtf
+  seed: 42
+  split_seed: 42
+config_files:
+  dataset: configs/dataset/oliveira.yaml
+  model: configs/model/rtf_rtx5000.yaml
+  train: configs/train/oliveira_rtf.yaml
+dataset:
+  name: oliveira
+  kind: csv
+  path: datasets/datasets/Oliveria.csv
+  text_column: api
+  label_column: class
+  label_order:
+  - Trojan
+  - Adware
+  - Downloader
+  - Ransomware
+  - Agent
+  - Riskware
+  - Backdoor
+  - Dropper
+  - Virus
+  test_size: 0.2
+  val_size: 0.2
+  random_state: 42
+  split_strategy: random
+  preprocess: null
+model:
+  name: rtf
+  pretrained_name: google/canine-c
+  max_length: 512
+  n_estimators: 3
+  embed_dim: 16
+  hidden_dim: 100
+  max_words: 800
+  lstm_max_len: 500
+  dropout: 0.2
+  chunk_size: 128
+  max_chunks: 64
+  num_phases: 4
+  recency_bias_init: 1.0
+  transformer_layers: 4
+  transformer_heads: null
+  gnn_layers: 2
+  truncation_side: right
+train:
+  output_dir: /home/wind/phongtt/malware-detection/results/rtf_rtx5000_oliveira_oliveira_rtf_20260721_031232
+  epochs: 10
+  batch_size: 14
+  learning_rate: 5.0e-05
+  weight_decay: 0.01
+  warmup_steps: 500
+  lr_scheduler_type: cosine
+  seed: 42
+  use_class_weights: true
+  fp16: true
+  dataloader_num_workers: 0
+  gradient_accumulation_steps: 1
+  metric_for_best_model: eval_auc
+  save_total_limit: 1
+  cleanup_checkpoints: true
+  use_afc_loss: false
+  afc_alpha: 0.1
+  afc_tau_base: 0.07
+  afc_adaptive: true
+  afc_warmup_epochs: 0
+  collect_training_history: true
+  collect_per_class: true
+  benchmark_inference: true
+  inference_warmup_batches: 1
+  logging_steps: 100
+splits:
+  train: 25961
+  val: 6491
+  test: 8114
+num_classes: 9
