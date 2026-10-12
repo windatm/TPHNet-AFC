@@ -1,0 +1,23 @@
+# Avast temporal hold-out (newest 24% as test). Does not replace avast.yaml.
+name: avast
+kind: avast
+path: data/avast.parquet
+text_column: api
+label_column: class
+label_order:
+  - Emotet
+  - Swisyn
+  - Qakbot
+  - Trickbot
+  - Lokibot
+  - njRAT
+  - Zeus
+  - Ursnif
+  - Adload
+  - HarHar
+test_size: 0.24
+val_size: 0.2
+random_state: 42
+split_strategy: temporal
+cv_folds: 5
+cv_shuffle: true

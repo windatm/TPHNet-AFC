@@ -1,0 +1,5 @@
+name: beacon
+embed_dim: 768
+max_chunks: 11
+dropout: 0.5
+beacon_chunk_chars: 8192
