@@ -96,6 +96,17 @@ malware-clf train --model epaht --dataset avast_temporal \
 
 `--split-seed 42` is the fold-shuffle seed. Repeat with `--cv-fold 1` through `--cv-fold 4`. `--no-cv-shuffle` assigns folds in date order.
 
+## Transformer chunk encoder
+
+`configs/model/epaht_transformer.yaml` (and the per-dataset `epaht_*_transformer` files) keep the TPHNet chunk budget, tail window, and query pooling, and replace the shared BiLSTM with a two-layer Transformer. The encoder output width stays `2 · hidden_dim`. `--chunk-encoder transformer` overlays the same switch on a BiLSTM YAML.
+
+Five-seed scores are under `results/` for all six datasets, with and without ACT-Loss. The summary workbook is `results/analysis/transformer_vs_bilstm.xlsx`.
+
+```bash
+malware-clf train --model epaht_catak_transformer --dataset catak --train-config epaht_catak
+malware-clf train --model epaht_winmet_v2_transformer --dataset winmet --train-config epaht_winmet_afc_v4
+```
+
 ## Layout
 
 ```

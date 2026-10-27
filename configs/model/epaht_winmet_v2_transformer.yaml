@@ -1,0 +1,12 @@
+# Transformer chunk encoder; same budget as epaht_winmet_v2.yaml.
+name: epaht
+max_words: 800
+embed_dim: 32
+hidden_dim: 128
+dropout: 0.2
+chunk_size: 64
+max_chunks: 64
+num_phases: 4
+recency_bias_init: 1.5
+chunk_encoder: transformer
+chunk_transformer_layers: 2
