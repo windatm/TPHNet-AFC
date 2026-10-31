@@ -1,0 +1,5 @@
+# First or last 48 API calls, then BERT's 512-subword window.
+name: bert
+pretrained_name: bert-base-cased
+max_length: 512
+max_calls: 48

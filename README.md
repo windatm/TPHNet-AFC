@@ -107,6 +107,20 @@ malware-clf train --model epaht_catak_transformer --dataset catak --train-config
 malware-clf train --model epaht_winmet_v2_transformer --dataset winmet --train-config epaht_winmet_afc_v4
 ```
 
+## Head and tail windows
+
+`--window head` keeps the first API names (or the first TPHNet chunks). Omitted or `--window tail` keeps the last, which is the published default. `--window` does not change BERT `truncation_side`.
+
+`max_calls` in the `*_calls_*.yaml` files caps the trace before encoding. TPHNet at 8,192 calls is `epaht.yaml` (64 chunks × 128). BERT 512 is `bert.yaml` / `bert_tail.yaml` (tokenizer window).
+
+Five-seed AVAST scores are under `results/`. The summary workbook is `results/analysis/head_tail_avast.xlsx`.
+
+```bash
+malware-clf train --model epaht_calls_32 --dataset avast --train-config epaht_avast
+malware-clf train --model epaht_calls_32 --dataset avast --train-config epaht_avast --window head
+malware-clf train --model epaht --dataset avast --train-config epaht_avast --window head
+```
+
 ## Layout
 
 ```
